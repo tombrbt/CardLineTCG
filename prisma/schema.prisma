@@ -1,0 +1,78 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Set {
+  id          Int      @id @default(autoincrement())
+  code        String   @unique // OP-09
+  name_fr     String
+  name_en     String
+  releaseDate DateTime
+  type        String
+  cards       Card[]
+}
+
+model Card {
+  id    Int @id @default(autoincrement())
+  set   Set @relation(fields: [setId], references: [id])
+  setId Int
+
+  code    String // OP09-001
+  variant String @default("base") // base, p1, p2...
+
+  name            String
+  type            String
+  color           String
+  costOrLife      Int
+  power           Int
+  counter         Int?
+  rarity          String
+  block           Int?
+  feature         String?
+  text            String?
+  illustrationUrl String
+  status          String
+  
+
+  rulings Ruling[]
+  aliases Alias[]
+
+  price CardPrice?
+
+  @@unique([code, variant])
+}
+
+model Ruling {
+  id         Int      @id @default(autoincrement())
+  card       Card     @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  cardId     Int
+  rulingText String
+  date       DateTime
+}
+
+model Alias {
+  id        Int    @id @default(autoincrement())
+  card      Card   @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  cardId    Int
+  aliasText String
+  language  String
+}
+
+model CardPrice {
+  id     Int  @id @default(autoincrement())
+  cardId Int @unique
+  card   Card @relation(fields: [cardId], references: [id], onDelete: Cascade)
+
+  lowPrice   Float?
+  trendPrice Float?
+  avg7       Float?
+  avg30      Float?
+
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+}

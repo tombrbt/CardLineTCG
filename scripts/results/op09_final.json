@@ -1,0 +1,2510 @@
+[
+  {
+    "code": "OP09-001",
+    "name_fr": "Shanks",
+    "rarity": "L",
+    "type": "LEADER",
+    "cost": 5,
+    "life": 5,
+    "power": 5000,
+    "counter": null,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Quatre Empereurs/Équipage du Roux",
+    "effect_fr": "[Une fois par tour] Peut être activé quand votre adversaire attaque. Jusqu'à 1 Leader ou Personnage adverse perd -1000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-001.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-001_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-002",
+    "name_fr": "Uta",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 1,
+    "life": null,
+    "power": 2000,
+    "counter": 1000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "FILM",
+    "effect_fr": "[Jouée] Regardez 5 cartes du dessus de votre deck, révélez jusqu'à 1 carte de type {Équipage du Roux} et ajoutez-la à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-002.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-002_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-003",
+    "name_fr": "Shachi et Pingouin",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 5000,
+    "counter": 1000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Heart",
+    "effect_fr": "[En attaquant] Jusqu'à 1 Personnage adverse perd -2000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-003.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-004",
+    "name_fr": "Shanks",
+    "rarity": "SR",
+    "type": "PERSONNAGE",
+    "cost": 10,
+    "life": null,
+    "power": 12000,
+    "counter": null,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Quatre Empereurs/Équipage du Roux",
+    "effect_fr": "Tous les Personnages adverses perdent -1000 de puissance.[Initiative] (Cette carte peut attaquer durant le tour où elle est jouée.)",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-004.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-004_p1.webp?260119"
+      },
+      {
+        "variant_id": "p2",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-004_p2.webp?260119"
+      },
+      {
+        "variant_id": "p3",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-004_p3.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-005",
+    "name_fr": "Silvers Rayleigh",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage de Roger",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)[Jouée] Si votre adversaire a 2 Personnages ou plus ayant 5000 de puissance de base ou plus, piochez 2 cartes et défaussez 1 carte de votre main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-005.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-006",
+    "name_fr": "Howling Gab",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 7000,
+    "counter": 1000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-006.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-007",
+    "name_fr": "Heat",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 4000,
+    "counter": 1000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage de Kidd",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)[Jouée] Jusqu'à 1 de vos Leaders ayant 4000 de puissance ou moins gagne +1000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-007.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-008",
+    "name_fr": "Building Snake",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 1,
+    "life": null,
+    "power": 2000,
+    "counter": null,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "[Activation : Principale] Vous pouvez placer ce Personnage au-dessous du deck de son propriétaire : Jusqu'à 1 Personnage adverse perd -3000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-008.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-009",
+    "name_fr": "Ben Beckmann",
+    "rarity": "SR",
+    "type": "PERSONNAGE",
+    "cost": 7,
+    "life": null,
+    "power": 7000,
+    "counter": 1000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "[Jouée] Placez dans sa Défausse jusqu'à 1 Personnage adverse ayant 6000 de puissance ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-009.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-009_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-010",
+    "name_fr": "Bonk Punch",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 5000,
+    "counter": 1000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "[Jouée] Jouez jusqu'à 1 [Monster] de votre main.[DON!! x1] [En attaquant] Ce Personnage gagne +2000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-010.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-011",
+    "name_fr": "Hongo",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 3000,
+    "counter": 2000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "[Activation : Principale] Vous pouvez épuiser ce Personnage : Si votre Leader est de type {Équipage du Roux}, jusqu'à 1 Personnage adverse perd -2000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-011.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-012",
+    "name_fr": "Monster",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 4000,
+    "counter": 1000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Animal/Équipage du Roux",
+    "effect_fr": "Si un de vos Personnages [Bonk Punch] est mis KO par un effet, vous pouvez placer ce Personnage dans votre Défausse à la place.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-012.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-013",
+    "name_fr": "Yasopp",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "[Jouée] Jusqu'à 1 de vos Leaders gagne +1000 de puissance jusqu'à la fin du prochain tour adverse.[DON!! x1] [En attaquant] Jusqu'à 1 Personnage adverse perd -1000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-013.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-014",
+    "name_fr": "Limejuice",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 3000,
+    "counter": 2000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "[Jouée] Jusqu'à 1 Personnage adverse ayant 4000 de puissance ou moins ne peut pas activer [Bloqueur] pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-014.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-015",
+    "name_fr": "Lucky Roo",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 5000,
+    "counter": 1000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)[En cas de KO] Si votre Leader est de type {Équipage du Roux}, mettez KO jusqu'à 1 Personnage adverse ayant 6000 de puissance de base ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-015.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-016",
+    "name_fr": "Rockstar",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-016.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-017",
+    "name_fr": "Wire",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 4000,
+    "counter": 2000,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage de Kidd",
+    "effect_fr": "[DON!! x1] Si votre Leader est de type {Équipage de Kidd} et a 7000 de puissance ou plus, ce Personnage gagne [Initiative].",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-017.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-018",
+    "name_fr": "Disparais",
+    "rarity": "UC",
+    "type": "ÉVÉNEMENTS",
+    "cost": 3,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "[Principale] Mettez KO jusqu'à 2 Personnages adverses ayant 4000 ou moins de puissance combinée.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-018.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-019",
+    "name_fr": "Sous aucun prétexte je ne pardonnerai à ceux qui s'en prennent à mes amis !!",
+    "rarity": "C",
+    "type": "ÉVÉNEMENTS",
+    "cost": 2,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "[Principale] Si votre Leader est de type {Équipage du Roux}, jusqu'à 1 Personnage adverse perd -3000 de puissance pour tout le tour. Puis, s'il y a un Personnage adverse ayant 5000 de puissance ou plus, piochez 1 carte.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-019.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-020",
+    "name_fr": "Qu'ils viennent !! On les attend de pied ferme !!",
+    "rarity": "R",
+    "type": "ÉVÉNEMENTS",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Quatre Empereurs/Équipage du Roux",
+    "effect_fr": "[Principale] Regardez 5 cartes du dessus de votre deck, révélez jusqu'à 1 carte de type {Équipage du Roux} autre que [Qu'ils viennent !! On les attend de pied ferme !!] et ajoutez-la à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-020.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-021",
+    "name_fr": "Red Force",
+    "rarity": "C",
+    "type": "LIEU",
+    "cost": 2,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Équipage du Roux",
+    "effect_fr": "[Activation : Principale] Vous pouvez épuiser ce Lieu : Si votre Leader est de type {Équipage du Roux}, jusqu'à 1 Personnage adverse perd -1000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-021.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-022",
+    "name_fr": "Lim",
+    "rarity": "L",
+    "type": "LEADER",
+    "cost": 4,
+    "life": 4,
+    "power": 5000,
+    "counter": null,
+    "color": "Vert/Violet",
+    "block": 3,
+    "feature": "ODYSSEY",
+    "effect_fr": "Vos cartes Personnage sont jouées épuisées.[Activation : Principale] [Une fois par tour] Vous pouvez épuiser 3 de vos cartes DON!! : Ajoutez jusqu'à 1 carte DON!! épuisée de votre deck DON!! et jouez jusqu'à 1 carte Personnage de type {ODYSSEY} de votre main ayant un coût de 5 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-022.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-022_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-023",
+    "name_fr": "Adio",
+    "rarity": "SR",
+    "type": "PERSONNAGE",
+    "cost": 9,
+    "life": null,
+    "power": 9000,
+    "counter": null,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY",
+    "effect_fr": "[Jouée] Si votre Leader est de type {ODYSSEY}, redressez jusqu'à 3 de vos cartes DON!!.[Attaque adverse] [Une fois par tour] Vous pouvez épuiser 1 de vos cartes DON!! : Jusqu'à 1 de vos Leaders ou Personnages gagne +2000 de puissance pour tout le combat.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-023.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-023_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-024",
+    "name_fr": "Usopp",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 5000,
+    "counter": 1000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Équipage de Chapeau de paille",
+    "effect_fr": "[Jouée] Si vous avez 2 Personnages ou plus épuisés, piochez 2 cartes et défaussez 2 cartes de votre main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-024.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-025",
+    "name_fr": "Crocodile",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 5000,
+    "counter": 1000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Sept grands corsaires/Baroque Works",
+    "effect_fr": "Si votre Leader est de type {ODYSSEY}, ce Personnage ne peut pas être mis KO par le Leader adverse en combat.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-025.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-026",
+    "name_fr": "Sakazuki",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 6,
+    "life": null,
+    "power": 7000,
+    "counter": null,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Marine",
+    "effect_fr": "[Jouée] Si vous avez 2 Personnages ou plus épuisés, mettez KO jusqu'à 1 Personnage adverse ayant un coût de 5 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-026.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-027",
+    "name_fr": "Sabo",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Armée révolutionnaire",
+    "effect_fr": "[En attaquant] [Une fois par tour] Si vous avez 3 Personnages ou plus épuisés, piochez 1 carte.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-027.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-028",
+    "name_fr": "Sanji",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Équipage de Chapeau de paille",
+    "effect_fr": "[En cas de KO] Vous pouvez ajouter à votre main 1 carte du dessus ou du dessous de votre Vie : Jouez jusqu'à 1 carte Personnage de type {ODYSSEY} ou {Équipage de Chapeau de paille} épuisée de votre Défausse ayant un coût de 4 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-028.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-029",
+    "name_fr": "Tony-Tony Chopper",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 4000,
+    "counter": 1000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Animal/Équipage de Chapeau de paille",
+    "effect_fr": "[Fin de votre tour] Redressez jusqu'à 1 de vos Personnages de type {ODYSSEY} ayant un coût de 4 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-029.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-030",
+    "name_fr": "Trafalgar Law",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 4000,
+    "counter": 1000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Supernovae/Équipage du Heart",
+    "effect_fr": "[Jouée] Vous pouvez renvoyer 1 de vos Personnages à la main de son propriétaire : Jouez jusqu'à 1 carte Personnage de type {ODYSSEY} de votre main ayant un coût de 3 ou moins autre que [Trafalgar Law].",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-030.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-031",
+    "name_fr": "Don Quijote Doflamingo",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Sept grands corsaires/Équipage de Don Quijote",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)[Fin de votre tour] Si vous avez 2 Personnages ou plus épuisés, redressez ce Personnage.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-031.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-032",
+    "name_fr": "Don Quijote Rosinante",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 4000,
+    "counter": 1000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Marine/Équipage de Don Quijote",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)[Attaque adverse] [Une fois par tour] Redressez ce Personnage.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-032.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-033",
+    "name_fr": "Nico Robin",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 5000,
+    "counter": 1000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Équipage de Chapeau de paille",
+    "effect_fr": "[Jouée] Si vous avez 2 Personnages ou plus épuisés, tous vos Personnages de type {ODYSSEY} ou {Équipage de Chapeau de paille} ne peuvent pas être mis KO par un effet jusqu'à la fin du prochain tour adverse.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-033.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-034",
+    "name_fr": "Perona",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 1,
+    "life": null,
+    "power": 2000,
+    "counter": 2000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "Royaume de Ceglok/Équipage de Thriller Bark",
+    "effect_fr": "[Jouée] Regardez 5 cartes du dessus de votre deck, révélez jusqu'à 1 carte de type {Équipage de Thriller Bark} ou [Dracule Mihawk] et ajoutez-la à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix et défaussez 1 carte de votre main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-034.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-034_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-035",
+    "name_fr": "Portgas D. Ace",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 5000,
+    "counter": 2000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Équipage de Barbe Blanche",
+    "effect_fr": "[Jouée] Si vous avez 2 Personnages ou plus épuisés, épuisez jusqu'à 1 Personnage adverse ayant un coût de 5 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-035.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-036",
+    "name_fr": "Monkey D. Luffy",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Supernovae/Équipage de Chapeau de paille",
+    "effect_fr": "[Jouée] Si vous avez 2 Personnages ou plus épuisés, épuisez jusqu'à 1 carte DON!! adverse ou 1 Personnage adverse ayant un coût de 6 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-036.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-037",
+    "name_fr": "Lim",
+    "rarity": "SR",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 5000,
+    "counter": null,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY",
+    "effect_fr": "[Jouée] Regardez 5 cartes du dessus de votre deck, révélez jusqu'à 1 carte de type {ODYSSEY} autre que [Lim] et ajoutez-la à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix.[Fin de votre tour] Si vous avez 3 Personnages ou plus épuisés, redressez ce Personnage.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-037.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-037_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-038",
+    "name_fr": "Rob Lucci",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/CP9",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-038.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-039",
+    "name_fr": "Gum Gum Cuatro Jet Cross Shock Bazooka",
+    "rarity": "R",
+    "type": "ÉVÉNEMENTS",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Supernovae/Équipage de Chapeau de paille",
+    "effect_fr": "[Contre] Si votre Leader est de type {ODYSSEY} et que vous avez 2 Personnages ou plus épuisés, jusqu'à 1 de vos Leaders ou Personnages gagne +2000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-039.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-040",
+    "name_fr": "Thunder Lance Flip Caliber Phoenix Shot",
+    "rarity": "UC",
+    "type": "ÉVÉNEMENTS",
+    "cost": 3,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Supernovae/Équipage de Chapeau de paille",
+    "effect_fr": "[Principale] Si vous avez 2 Personnages ou plus épuisés, mettez KO jusqu'à 1 Personnage adverse ayant un coût de 4 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-040.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-041",
+    "name_fr": "Soul Franky Swing Arm Boxing Solid",
+    "rarity": "C",
+    "type": "ÉVÉNEMENTS",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Vert",
+    "block": 3,
+    "feature": "ODYSSEY/Équipage de Chapeau de paille",
+    "effect_fr": "[Contre] Jusqu'à 1 de vos Leaders ou Personnages gagne +2000 de puissance pour tout le combat. Puis, si votre Leader est de type {ODYSSEY} et que vous avez 2 Personnages ou plus épuisés, redressez jusqu'à 2 de vos Personnages.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-041.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-042",
+    "name_fr": "Baggy",
+    "rarity": "L",
+    "type": "LEADER",
+    "cost": 5,
+    "life": 5,
+    "power": 5000,
+    "counter": null,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Quatre Empereurs/Cross Guild",
+    "effect_fr": "[Activation : Principale] Vous pouvez épuiser 5 de vos cartes DON!! et défausser 1 carte de votre main : Jouez jusqu'à 1 carte Personnage de type {Cross Guild} de votre main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-042.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-042_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-043",
+    "name_fr": "Alvida",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Cross Guild",
+    "effect_fr": "[En cas de KO] Si votre Leader est de type {Cross Guild}, jouez jusqu'à 1 carte Personnage de votre main ayant un coût de 5 ou moins autre que [Alvida].",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-043.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-044",
+    "name_fr": "Izo",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 4000,
+    "counter": 1000,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Pays de Wano/Équipage de Barbe Blanche",
+    "effect_fr": "[En attaquant] Regardez 5 cartes du dessus de votre deck, révélez jusqu'à 1 carte de type {Pays de Wano} ou incluant «Équipage de Barbe Blanche» dans son type et ajoutez-la à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix et défaussez 1 carte de votre main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-044.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-045",
+    "name_fr": "Cabaji",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 5000,
+    "counter": 2000,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Cross Guild",
+    "effect_fr": "Si vous avez un Personnage [Baggy] ou [Morge], ce Personnage ne peut pas être mis KO en combat.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-045.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-046",
+    "name_fr": "Crocodile",
+    "rarity": "SR",
+    "type": "PERSONNAGE",
+    "cost": 7,
+    "life": null,
+    "power": 7000,
+    "counter": 1000,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Cross Guild/Ex-Baroque Works",
+    "effect_fr": "[Jouée] Jouez jusqu'à 1 carte Personnage de type {Cross Guild} ou incluant «Baroque Works» dans son type se trouvant dans votre main et ayant un coût de 5 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-046.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-046_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-047",
+    "name_fr": "Oden Kozuki",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 9,
+    "life": null,
+    "power": 10000,
+    "counter": null,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Pays de Wano/Équipage de Barbe Blanche",
+    "effect_fr": "[Double attaque] (Les dégâts infligés par cette carte passent à 2.)[En cas de KO] Piochez 2 cartes et défaussez 1 carte de votre main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-047.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-048",
+    "name_fr": "Dracule Mihawk",
+    "rarity": "SR",
+    "type": "PERSONNAGE",
+    "cost": 6,
+    "life": null,
+    "power": 7000,
+    "counter": null,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Cross Guild",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)[Jouée] Piochez 2 cartes et défaussez 1 carte de votre main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-048.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-048_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-049",
+    "name_fr": "Joz",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Équipage de Barbe Blanche",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-049.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-050",
+    "name_fr": "Nami",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 1,
+    "life": null,
+    "power": 1000,
+    "counter": 1000,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "East Blue",
+    "effect_fr": "[En attaquant] Regardez 5 cartes du dessus de votre deck, révélez jusqu'à 1 Événement bleu et ajoutez-le à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-050.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-050_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-051",
+    "name_fr": "Baggy",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 10,
+    "life": null,
+    "power": 12000,
+    "counter": null,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Quatre Empereurs/Cross Guild",
+    "effect_fr": "[Jouée] Placez jusqu'à 1 Personnage adverse au-dessous du deck de son propriétaire. Puis, si vous n'avez pas 5 Personnages ayant un coût de 5 ou plus, placez ce Personnage au-dessous du deck de son propriétaire.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-051.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-051_p1.webp?260119"
+      },
+      {
+        "variant_id": "p2",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-051_p2.webp?260119"
+      },
+      {
+        "variant_id": "p3",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-051_p3.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-052",
+    "name_fr": "Marco",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 5000,
+    "counter": null,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Équipage de Barbe Blanche",
+    "effect_fr": "[Tour adverse] Vous pouvez défausser 1 carte de votre main : Quand ce Personnage est mis KO par un effet adverse, jouez cette carte Personnage épuisée depuis votre Défausse.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-052.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-053",
+    "name_fr": "Morge",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 5000,
+    "counter": 2000,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Cross Guild",
+    "effect_fr": "[Jouée] Regardez 5 cartes du dessus de votre deck, révélez jusqu'à 1 [Richie] et ajoutez-le à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix et jouez jusqu'à 1 [Richie] de votre main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-053.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-054",
+    "name_fr": "Richie",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 2,
+    "life": null,
+    "power": 2000,
+    "counter": 1000,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Animal/Cross Guild",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-054.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-055",
+    "name_fr": "Mr 1 (Das Bones)",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 7000,
+    "counter": 1000,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Cross Guild/Ex-Baroque Works",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-055.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-056",
+    "name_fr": "Mr 3 (Galdino)",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 1,
+    "life": null,
+    "power": 2000,
+    "counter": 1000,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Cross Guild/Ex-Baroque Works",
+    "effect_fr": "[Jouée] Regardez 4 cartes du dessus de votre deck, révélez jusqu'à 1 carte de type {Cross Guild} ou incluant «Baroque Works» dans son type autre que [Mr 3 (Galdino)] et ajoutez-la à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-056.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-057",
+    "name_fr": "Cross Guild",
+    "rarity": "R",
+    "type": "ÉVÉNEMENTS",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Cross Guild",
+    "effect_fr": "[Principale] Regardez 4 cartes du dessus de votre deck, révélez jusqu'à 1 carte de type {Cross Guild} et ajoutez-la à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-057.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-058",
+    "name_fr": "Maggy Ball spéciale",
+    "rarity": "C",
+    "type": "ÉVÉNEMENTS",
+    "cost": 2,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Bande à Baggy",
+    "effect_fr": "[Principale] Votre adversaire doit renvoyer à la main de son propriétaire 1 de ses Personnages ayant un coût de 6 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-058.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-059",
+    "name_fr": "Tour de passe-passe brouillard",
+    "rarity": "UC",
+    "type": "ÉVÉNEMENTS",
+    "cost": 2,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Bande à Baggy",
+    "effect_fr": "[Contre] Jusqu'à 1 de vos Leaders ou Personnages gagne +3000 de puissance pour tout le combat. Puis, défaussez jusqu'à 2 cartes de votre main. Placez dans votre Défausse autant de cartes du dessus de votre deck que précédemment défaussées.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-059.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-060",
+    "name_fr": "Île de Lacrahn-Ri",
+    "rarity": "C",
+    "type": "LIEU",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Bleu",
+    "block": 3,
+    "feature": "Cross Guild",
+    "effect_fr": "[Activation : Principale] Vous pouvez placer 2 cartes de votre main au-dessous de votre deck dans l'ordre de votre choix et épuiser ce Lieu : Si votre Leader est de type {Cross Guild}, piochez 2 cartes.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-060.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-061",
+    "name_fr": "Monkey D. Luffy",
+    "rarity": "L",
+    "type": "LEADER",
+    "cost": 4,
+    "life": 4,
+    "power": 5000,
+    "counter": null,
+    "color": "Violet/Noir",
+    "block": 3,
+    "feature": "Quatre Empereurs/Équipage de Chapeau de paille",
+    "effect_fr": "[DON!! x1] Augmentez de +1 le coût de tous vos Personnages.[Votre tour] [Une fois par tour] Quand 2 cartes DON!! ou plus de votre terrain sont renvoyées à votre deck DON!!, ajoutez jusqu'à 1 carte DON!! redressée de votre deck DON!! et ajoutez jusqu'à 1 carte épuisée en plus.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-061.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-061_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-062",
+    "name_fr": "Nico Robin",
+    "rarity": "L",
+    "type": "LEADER",
+    "cost": 4,
+    "life": 4,
+    "power": 5000,
+    "counter": null,
+    "color": "Violet/Jaune",
+    "block": 3,
+    "feature": "Équipage de Chapeau de paille",
+    "effect_fr": "[Exil] (Quand cette carte inflige des dégâts, la carte cible est placée dans la Défausse sans activer Déclenchement.)[En attaquant] Vous pouvez défausser 1 carte de votre main ayant",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-062.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-062_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-063",
+    "name_fr": "Usopp",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage de Chapeau de paille",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-063.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-064",
+    "name_fr": "Killer",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 5000,
+    "counter": 1000,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage de Kidd",
+    "effect_fr": "[Jouée] DON!! -1 (Vous pouvez renvoyer à votre deck DON!! le nombre indiqué de cartes DON!! de votre terrain.) : Redressez jusqu'à 1 de vos Leaders de type {Équipage de Kidd}.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-064.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-065",
+    "name_fr": "Sanji",
+    "rarity": "SR",
+    "type": "PERSONNAGE",
+    "cost": 7,
+    "life": null,
+    "power": 7000,
+    "counter": 1000,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage de Chapeau de paille",
+    "effect_fr": "[Jouée] Vous pouvez renvoyer à votre deck DON!! 1 carte DON!! ou plus de votre terrain : Ce Personnage gagne [Initiative] pour tout le tour. Puis, épuisez jusqu'à 1 Personnage adverse ayant un coût de 6 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-065.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-065_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-066",
+    "name_fr": "Jean Bart",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 6000,
+    "counter": null,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage du Heart",
+    "effect_fr": "[Jouée] Si votre adversaire a plus de cartes DON!! sur son terrain que vous n'en avez sur le vôtre, mettez KO jusqu'à 1 Personnage adverse ayant un coût de 3 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-066.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-067",
+    "name_fr": "Jinbe",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 7,
+    "life": null,
+    "power": 9000,
+    "counter": 1000,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Hommes-poissons/Équipage de Chapeau de paille",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-067.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-068",
+    "name_fr": "Tony-Tony Chopper",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Animal/Équipage de Chapeau de paille",
+    "effect_fr": "[Fin de votre tour] Vous pouvez renvoyer à votre deck DON!! 1 carte DON!! ou plus de votre terrain : Redressez ce Personnage. Puis, ce Personnage gagne [Bloqueur] jusqu'à la fin du prochain tour adverse.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-068.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-069",
+    "name_fr": "Trafalgar Law",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 1,
+    "life": null,
+    "power": 2000,
+    "counter": 1000,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage du Heart",
+    "effect_fr": "[Jouée] Regardez 4 cartes du dessus de votre deck, révélez jusqu'à 1 carte de type {Équipage de Chapeau de paille} ou {Équipage du Heart} ayant un coût de 2 ou plus et ajoutez-la à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-069.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-069_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-070",
+    "name_fr": "Nami",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 2000,
+    "counter": 2000,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage de Chapeau de paille",
+    "effect_fr": "[Jouée] Vous pouvez renvoyer à votre deck DON!! 1 carte DON!! ou plus de votre terrain : Donnez jusqu'à 2 cartes DON!! épuisées à votre Leader ou à 1 de vos Personnages.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-070.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-071",
+    "name_fr": "Nico Robin",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 2,
+    "life": null,
+    "power": 2000,
+    "counter": 1000,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage de Chapeau de paille",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-071.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-072",
+    "name_fr": "Franky",
+    "rarity": "SR",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 5000,
+    "counter": 1000,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage de Chapeau de paille",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)[Jouée] DON!! -2 ; vous pouvez défausser 1 carte de votre main : Piochez 2 cartes.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-072.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-072_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-073",
+    "name_fr": "Brook",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 6,
+    "life": null,
+    "power": 7000,
+    "counter": 1000,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage de Chapeau de paille",
+    "effect_fr": "[En attaquant] Vous pouvez renvoyer à votre deck DON!! 1 carte DON!! ou plus de votre terrain : Jusqu'à 2 Personnages adverses perdent -2000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-073.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-074",
+    "name_fr": "Bepo",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 2,
+    "life": null,
+    "power": 2000,
+    "counter": 2000,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Minks/Équipage du Heart",
+    "effect_fr": "[Votre tour] [Une fois par tour] Quand une carte DON!! de votre terrain est renvoyée à votre deck DON!!, jusqu'à 1 de vos Leaders ou Personnages gagne +1000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-074.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-075",
+    "name_fr": "Eustass \"Captain\" Kidd",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 5000,
+    "counter": null,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage de Kidd",
+    "effect_fr": "[Jouée] Vous pouvez ajouter à votre main 1 carte du dessus de votre Vie : Si votre Leader est de type {Équipage de Kidd}, ajoutez jusqu'à 1 carte DON!! redressée de votre deck DON!!.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-075.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-076",
+    "name_fr": "Roronoa Zoro",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 5000,
+    "counter": null,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage de Chapeau de paille",
+    "effect_fr": "[Jouée] Vous pouvez renvoyer à votre deck DON!! 1 carte DON!! ou plus de votre terrain : Ajoutez jusqu'à 1 carte DON!! redressée de votre deck DON!!.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-076.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-077",
+    "name_fr": "Gum Gum Foudre",
+    "rarity": "UC",
+    "type": "ÉVÉNEMENTS",
+    "cost": 2,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Quatre Empereurs/Équipage de Chapeau de paille",
+    "effect_fr": "[Principale] DON!! -2 (Vous pouvez renvoyer à votre deck DON!! le nombre indiqué de cartes DON!! de votre terrain.) : Mettez KO jusqu'à 1 Personnage adverse ayant 6000 de puissance ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-077.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-078",
+    "name_fr": "Gum Gum Gigant",
+    "rarity": "R",
+    "type": "ÉVÉNEMENTS",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Quatre Empereurs/Équipage de Chapeau de paille",
+    "effect_fr": "[Contre] DON!! -2 ; vous pouvez défausser 1 carte de votre main : Si votre Leader est de type {Équipage de Chapeau de paille}, jusqu'à 1 de vos Leaders ou Personnages gagne +4000 de puissance pour tout le combat. Puis, piochez 2 cartes.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-078.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-079",
+    "name_fr": "Gum Gum Saut à la corde",
+    "rarity": "C",
+    "type": "ÉVÉNEMENTS",
+    "cost": 2,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Quatre Empereurs/Équipage de Chapeau de paille",
+    "effect_fr": "[Principale] DON!! -2 (Vous pouvez renvoyer à votre deck DON!! le nombre indiqué de cartes DON!! de votre terrain.) : Épuisez jusqu'à 1 Personnage adverse ayant un coût de 5 ou moins. Puis, piochez 1 carte.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-079.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-080",
+    "name_fr": "Thousand Sunny",
+    "rarity": "C",
+    "type": "LIEU",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage de Chapeau de paille",
+    "effect_fr": "[Tour adverse] Vous pouvez épuiser ce Lieu : Quand un de vos Personnages de type {Équipage de Chapeau de paille} quitte le terrain à cause d'un effet adverse, ajoutez jusqu'à 1 carte DON!! épuisée de votre deck DON!!.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-080.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-081",
+    "name_fr": "Marshall D. Teach",
+    "rarity": "L",
+    "type": "LEADER",
+    "cost": 5,
+    "life": 5,
+    "power": 5000,
+    "counter": null,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Quatre Empereurs/Équipage de Barbe Noire",
+    "effect_fr": "Vos effets [Jouée] sont annulés.[Activation : Principale] Vous pouvez défausser 1 carte de votre main : Les effets [Jouée] de votre adversaire sont annulés jusqu'à la fin du prochain tour adverse.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-081.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-081_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-082",
+    "name_fr": "Avalo Pizarro",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-082.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-083",
+    "name_fr": "Van Auger",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "[Activation : Principale] Vous pouvez épuiser ce Personnage : Si votre Leader est de type {Équipage de Barbe Noire}, réduisez de -3 le coût de jusqu'à 1 Personnage adverse pour tout le tour.[En cas de KO] Piochez 1 carte.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-083.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-084",
+    "name_fr": "Catarina Devon",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "[Activation : Principale] [Une fois par tour] Si votre Leader est de type {Équipage de Barbe Noire}, ce Personnage gagne [Double attaque], [Exil] ou [Bloqueur] jusqu'à la fin du prochain tour adverse.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-084.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-085",
+    "name_fr": "Gecko Moria",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 5000,
+    "counter": null,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Thriller Bark",
+    "effect_fr": "[Jouée] Jouez jusqu'à 1 carte Personnage de type {Équipage de Thriller Bark} épuisée de votre Défausse ayant un coût de 2 ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-085.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-086",
+    "name_fr": "Jesus Burgess",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 5000,
+    "counter": 1000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "Ce Personnage ne peut pas être mis KO par un effet adverse.Si votre Leader est de type {Équipage de Barbe Noire}, pour chaque tranche de 4 cartes dans votre Défausse, ce Personnage gagne +1000 de puissance.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-086.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-087",
+    "name_fr": "Charlotte Pudding",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 2,
+    "life": null,
+    "power": null,
+    "counter": 1000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Big Mom",
+    "effect_fr": "[Jouée] Si votre adversaire a 5 cartes ou plus dans sa main, il doit défausser 1 carte de sa main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-087.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-088",
+    "name_fr": "Shiliew",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 4000,
+    "counter": 2000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "[DON!! x1] [En attaquant] Vous pouvez défausser 2 cartes de votre main : Piochez 2 cartes.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-088.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-089",
+    "name_fr": "Stronger",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": 2000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Animal/Équipage de Barbe Noire",
+    "effect_fr": "[Activation : Principale] Vous pouvez défausser 1 carte de votre main et placer ce Personnage dans votre Défausse : Si votre Leader est de type {Équipage de Barbe Noire}, piochez 1 carte. Puis, réduisez de -2 le coût de jusqu'à 1 Personnage adverse pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-089.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-090",
+    "name_fr": "Doc Q",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 2,
+    "life": null,
+    "power": null,
+    "counter": 1000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "[Activation : Principale] Vous pouvez épuiser ce Personnage : Si votre Leader est de type {Équipage de Barbe Noire}, mettez KO jusqu'à 1 Personnage adverse ayant un coût de 1 ou moins.[En cas de KO] Piochez 1 carte.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-090.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-091",
+    "name_fr": "Vasco Shot",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 2,
+    "life": null,
+    "power": 2000,
+    "counter": 1000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-091.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-092",
+    "name_fr": "Marshall D. Teach",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 4000,
+    "counter": 1000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Blanche",
+    "effect_fr": "[Activation : Principale] Vous pouvez épuiser ce Personnage : Si votre main comporte au moins 3 cartes de moins que celle de votre adversaire, piochez 2 cartes et défaussez 1 carte de votre main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-092.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-093",
+    "name_fr": "Marshall D. Teach",
+    "rarity": "SR",
+    "type": "PERSONNAGE",
+    "cost": 10,
+    "life": null,
+    "power": 12000,
+    "counter": null,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Quatre Empereurs/Équipage de Barbe Noire",
+    "effect_fr": "[Bloqueur][Activation : Principale] [Une fois par tour] Si votre Leader est de type {Équipage de Barbe Noire} et que ce Personnage a été joué ce tour, annulez les effets de jusqu'à 1 Leader adverse pour tout le tour. Puis, annulez les effets de jusqu'à 1 Personnage adverse et empêchez-le d'attaquer jusqu'à la fin du prochain tour adverse.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-093.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-093_p1.webp?260119"
+      },
+      {
+        "variant_id": "p2",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-093_p2.webp?260119"
+      },
+      {
+        "variant_id": "p3",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-093_p3.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-094",
+    "name_fr": "Barbe Rose",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 5000,
+    "counter": 1000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Rose/Alliés de l'équipage de Barbe Noire",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-094.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-095",
+    "name_fr": "Laffitte",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 1,
+    "life": null,
+    "power": 1000,
+    "counter": 1000,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "[Activation : Principale] Vous pouvez épuiser 1 de vos cartes DON!! et ce Personnage : Regardez 5 cartes du dessus de votre deck, révélez jusqu'à 1 carte de type {Équipage de Barbe Noire} et ajoutez-la à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-095.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-096",
+    "name_fr": "L'avènement de mon règne !!",
+    "rarity": "R",
+    "type": "ÉVÉNEMENTS",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "[Principale] Regardez 3 cartes du dessus de votre deck, révélez jusqu'à 1 carte de type {Équipage de Barbe Noire} autre que [L'avènement de mon règne !!] et ajoutez-la à votre main. Puis, placez les cartes restantes dans votre Défausse.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-096.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-097",
+    "name_fr": "Tourbillon noir",
+    "rarity": "C",
+    "type": "ÉVÉNEMENTS",
+    "cost": 2,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "[Contre] Annulez les effets de jusqu'à 1 Leader ou Personnage adverse et faites-lui perdre -4000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-097.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-098",
+    "name_fr": "Black Hole",
+    "rarity": "UC",
+    "type": "ÉVÉNEMENTS",
+    "cost": 4,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "[Principale] Si votre Leader est de type {Équipage de Barbe Noire}, annulez les effets de jusqu'à 1 Personnage adverse pour tout le tour. Puis, si ce Personnage a un coût de 4 ou moins, mettez-le KO.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-098.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-099",
+    "name_fr": "Ruche",
+    "rarity": "C",
+    "type": "LIEU",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Noir",
+    "block": 3,
+    "feature": "Équipage de Barbe Noire",
+    "effect_fr": "[Activation : Principale] Vous pouvez défausser 1 carte de votre main et épuiser ce Lieu : Regardez 3 cartes du dessus de votre deck, révélez jusqu'à 1 carte de type {Équipage de Barbe Noire} et ajoutez-la à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-099.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-100",
+    "name_fr": "Corbeau",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 4000,
+    "counter": 1000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Armée révolutionnaire",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-100.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-101",
+    "name_fr": "Kuzan",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 5000,
+    "counter": 1000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Marine",
+    "effect_fr": "[Jouée] Placez face visible au-dessus ou au-dessous de la Vie adverse 1 Personnage adverse ayant un coût de 3 ou moins : Votre adversaire doit défausser 1 carte de sa main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-101.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-102",
+    "name_fr": "Professeur Clover",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": 2000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Ohara",
+    "effect_fr": "[Jouée] Si votre Leader est [Nico Robin], regardez 3 cartes du dessus de votre deck, révélez jusqu'à 1 carte ayant [Déclenchement] et ajoutez-la à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-102.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-103",
+    "name_fr": "Koala",
+    "rarity": "SR",
+    "type": "PERSONNAGE",
+    "cost": 6,
+    "life": null,
+    "power": 6000,
+    "counter": null,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Armée révolutionnaire",
+    "effect_fr": "[Bloqueur][Jouée] Vous pouvez ajouter à votre main 1 carte du dessus ou du dessous de votre Vie : Jouez jusqu'à 1 carte Personnage de type {Armée révolutionnaire} de votre main ayant un coût de 4 ou moins. Si vous l'avez jouée, piochez 1 carte.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-103.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-103_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-104",
+    "name_fr": "Sabo",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 7,
+    "life": null,
+    "power": 7000,
+    "counter": 1000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Armée révolutionnaire",
+    "effect_fr": "[Jouée] Ajoutez face visible au-dessus de votre Vie jusqu'à 1 carte Personnage de type {Armée révolutionnaire} de votre main. Puis, si vous avez 2 cartes ou plus dans votre Vie, ajoutez à votre main 1 carte du dessus ou du dessous de votre Vie.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-104.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-105",
+    "name_fr": "Sanji",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Egg Head/Équipage de Chapeau de paille",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-105.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-106",
+    "name_fr": "Nico Olvia",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": 2000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Ohara",
+    "effect_fr": "[Jouée] Jusqu'à 1 de vos Leaders [Nico Robin] gagne +3000 de puissance pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-106.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-107",
+    "name_fr": "Nico Robin",
+    "rarity": "R",
+    "type": "PERSONNAGE",
+    "cost": 6,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Équipage de Chapeau de paille",
+    "effect_fr": "[Jouée] Si votre adversaire a 3 cartes ou plus dans sa Vie, placez dans sa Défausse jusqu'à 1 carte du dessus de sa Vie.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-107.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-107_p1.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-108",
+    "name_fr": "Bartholomew Kuma",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 5000,
+    "counter": 2000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Sept grands corsaires/Armée révolutionnaire",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-108.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-109",
+    "name_fr": "Haguar D. Sauro",
+    "rarity": "UC",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 5000,
+    "counter": null,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Ohara/Géants/Marine",
+    "effect_fr": "[Bloqueur] (Après que votre adversaire a déclaré une attaque, vous pouvez épuiser cette carte pour qu'elle devienne la cible de l'attaque.)",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-109.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-110",
+    "name_fr": "Pierre",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 2,
+    "life": null,
+    "power": 2000,
+    "counter": 1000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Animal/Île céleste",
+    "effect_fr": "[Jouée] Piochez 2 cartes et défaussez 2 cartes de votre main.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-110.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-111",
+    "name_fr": "Brook",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 5,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Egg Head/Équipage de Chapeau de paille",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-111.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-112",
+    "name_fr": "Belo Betty",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 4000,
+    "counter": 1000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Armée révolutionnaire",
+    "effect_fr": "[Jouée] Si vous avez 2 cartes ou moins dans votre Vie, piochez 1 carte.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-112.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-113",
+    "name_fr": "Morley",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 4,
+    "life": null,
+    "power": 6000,
+    "counter": 1000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Géants/Armée révolutionnaire",
+    "effect_fr": "-",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-113.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-114",
+    "name_fr": "Lindbergh",
+    "rarity": "C",
+    "type": "PERSONNAGE",
+    "cost": 3,
+    "life": null,
+    "power": 4000,
+    "counter": 1000,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Minks/Armée révolutionnaire",
+    "effect_fr": "[Jouée] Si vous et votre adversaire avez un total de 5 cartes ou moins dans vos Vies, mettez KO jusqu'à 1 Personnage adverse ayant 2000 de puissance ou moins.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-114.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-115",
+    "name_fr": "Ice Block Partisan",
+    "rarity": "UC",
+    "type": "ÉVÉNEMENTS",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Marine",
+    "effect_fr": "[Principale] Mettez KO jusqu'à 1 Personnage adverse ayant un coût de 3 ou moins et [Déclenchement].",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-115.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-116",
+    "name_fr": "Les miracles n'arrivent qu'à ceux qui ont la volonté de se battre !!",
+    "rarity": "C",
+    "type": "ÉVÉNEMENTS",
+    "cost": 1,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Armée révolutionnaire",
+    "effect_fr": "[Contre] Jusqu'à 1 de vos Leaders ou Personnages gagne +2000 de puissance pour tout le combat.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-116.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-117",
+    "name_fr": "Dereshi",
+    "rarity": "R",
+    "type": "ÉVÉNEMENTS",
+    "cost": 3,
+    "life": null,
+    "power": null,
+    "counter": null,
+    "color": "Jaune",
+    "block": 3,
+    "feature": "Ohara",
+    "effect_fr": "[Principale] Regardez 5 cartes du dessus de votre deck, révélez jusqu'à 2 cartes ayant [Déclenchement] autres que [Dereshi] et ajoutez-les à votre main. Puis, placez les cartes restantes au-dessous de votre deck dans l'ordre de votre choix.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-117.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-118",
+    "name_fr": "Gol D. Roger",
+    "rarity": "SEC",
+    "type": "PERSONNAGE",
+    "cost": 10,
+    "life": null,
+    "power": 13000,
+    "counter": null,
+    "color": "Rouge",
+    "block": 3,
+    "feature": "Roi des pirates/Équipage de Roger",
+    "effect_fr": "[Initiative] (Cette carte peut attaquer durant le tour où elle est jouée.)Quand votre adversaire active [Bloqueur], si vous ou votre adversaire n'avez plus de cartes dans votre Vie, vous remportez la partie.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-118.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-118_p1.webp?260119"
+      },
+      {
+        "variant_id": "p2",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-118_p2.webp?260119"
+      }
+    ]
+  },
+  {
+    "code": "OP09-119",
+    "name_fr": "Monkey D. Luffy",
+    "rarity": "SEC",
+    "type": "PERSONNAGE",
+    "cost": 9,
+    "life": null,
+    "power": 10000,
+    "counter": null,
+    "color": "Violet",
+    "block": 3,
+    "feature": "Équipage de Chapeau de paille",
+    "effect_fr": "[Jouée] Vous pouvez renvoyer à votre deck DON!! 1 carte DON!! ou plus de votre terrain : Piochez 1 carte ; ce Personnage gagne [Initiative] pour tout le tour.",
+    "variants": [
+      {
+        "variant_id": "base",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-119.webp?260119"
+      },
+      {
+        "variant_id": "p1",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-119_p1.webp?260119"
+      },
+      {
+        "variant_id": "p2",
+        "image": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-119_p2.webp?260119"
+      }
+    ]
+  }
+]
