@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState, useDeferredValue, useEffect, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import CardDetailModal from "./CardDetailModal";
@@ -202,7 +201,7 @@ const { data: famData } = useQuery<FamiliesResponse>({
   return (
     <div className="p-4 flex-1 container mx-auto px-4 py-8">
       <div className="relative flex-1 mb-4">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-search absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
       {/* INPUT */}
   
       <input
