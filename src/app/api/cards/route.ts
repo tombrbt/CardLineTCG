@@ -67,9 +67,22 @@ export async function GET(req: Request) {
       orderBy,
       skip,
       take: pageSize,
-      include: { set: true },
+      select: {
+        id: true,
+        code: true,
+        variant: true,
+        name: true,
+        type: true,
+        color: true,
+        rarity: true,
+        illustrationUrl: true,
+        setId: true, // si besoin
+      },
     }),
   ]);
+  
+  const hasNextPage = cards.length > pageSize;
+cards.pop();
 
   return NextResponse.json({
     success: true,
