@@ -81,8 +81,8 @@ export async function GET(req: Request) {
     }),
   ]);
   
-  const hasNextPage = cards.length > pageSize;
-cards.pop();
+//   const hasNextPage = cards.length > pageSize;
+// cards.pop();
 
   return NextResponse.json({
     success: true,

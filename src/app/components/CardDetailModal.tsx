@@ -244,6 +244,13 @@ export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }
                       </div>
                     )}
 
+                    {!isEmpty(card.type) && (
+                      <div>
+                        <div className="text-xs uppercase text-gray-500">Type</div>
+                        <div>{card.type}</div>
+                      </div>
+                    )}
+
                     {!isEmpty(card.rarity) && (
                     <div>
                         <div className="text-xs uppercase text-gray-500">Rareté</div>
@@ -251,10 +258,10 @@ export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }
                     </div>
                     )}
 
-                    {!isEmpty(card.type) && (
+                    {!isEmpty(card.power) && (
                       <div>
-                        <div className="text-xs uppercase text-gray-500">Type</div>
-                        <div>{card.type}</div>
+                        <div className="text-xs uppercase text-gray-500">Puissance</div>
+                        <div>{card.power}</div>
                       </div>
                     )}
 
@@ -265,12 +272,7 @@ export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }
                       </div>
                     )}
 
-                    {!isEmpty(card.power) && (
-                      <div>
-                        <div className="text-xs uppercase text-gray-500">Puissance</div>
-                        <div>{card.power}</div>
-                      </div>
-                    )}
+
 
                     {!isEmpty(card.costOrLife) && (
                       <div>
@@ -279,13 +281,13 @@ export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }
                       </div>
                     )}
 
-                    {!isEmpty(card.color) && (
+
+                      {!isEmpty(card.color) && (
                       <div>
                         <div className="text-xs uppercase text-gray-500">Couleur</div>
                         <div>{card.color}</div>
                       </div>
                     )}
-
                     {!isEmpty(card.block) && (
                       <div>
                         <div className="text-xs uppercase text-gray-500">Bloc</div>
@@ -395,4 +397,4 @@ export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }
       )}
     </div>
   );
-}
+} 

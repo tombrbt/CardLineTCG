@@ -16,7 +16,7 @@ export async function GET(_req: Request, ctx: Ctx) {
 
   const card = await prisma.card.findUnique({
     where: { id: cardId },
-    include: {  price: true},
+    include: { set: true, price: true},
   });
 
   if (!card) {

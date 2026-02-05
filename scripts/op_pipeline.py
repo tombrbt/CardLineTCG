@@ -195,7 +195,7 @@ def run(series_id: str, set_code: str, limit: int | None = None):
         flat.extend(rows)
 
     ensure_dir("scripts/results")
-    out_path = f"scripts/results/{set_code}_flat.json"
+    out_path = f"scripts/results/{set_code}_final.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(flat, f, ensure_ascii=False, indent=2)
 

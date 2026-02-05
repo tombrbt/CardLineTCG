@@ -51,11 +51,12 @@ export default function CardList() {
 
   const resetFilters = () => {
     setSearchInput("");
-    setColor("");
-    setType("");
-    setRarity("");
-    setFamily("");
-    setPage(1);
+  setColor("");
+  setType("");
+  setRarity("");
+  setFamily("");
+  setSetCode("");
+  setPage(1);
   
     // si tu as aussi ces states :
     // setSetCode("OP-09");  // ou ""
@@ -74,11 +75,11 @@ export default function CardList() {
     if (family) params.append("family", family);
     
 
-    // if (setCode) params.append("set", setCode);
+    if (setCode) params.append("set", setCode);
     // if (sort) params.append("sort", sort);
 
     params.append("page", String(page));
-    params.append("pageSize", "24");
+    params.append("pageSize", "50");
 
     return `/api/cards?${params.toString()}`;
   };
@@ -240,7 +241,7 @@ const { data: famData } = useQuery<FamiliesResponse>({
           <option value="SR">Super Rare</option>
           <option value="L">Leader</option>
           <option value="SEC">Secrète</option>
-          <option value="SP CARD">SP</option>
+          <option value="SP CARD">Spécial</option>
           <option value="MANGA">Manga</option>
         </select>
 
