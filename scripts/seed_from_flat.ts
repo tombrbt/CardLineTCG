@@ -12,7 +12,7 @@ async function main() {
   const jsonPath = process.argv[3];
 
   if (!setCode || !jsonPath) {
-    console.error("Usage: npx tsx scripts/seed_from_flat.ts OP-09 scripts/results/OP-09_flat.json");
+    console.error("Usage: npx tsx scripts/seed_from_flat.ts OP-09 scripts/results/OP-final.json");
     process.exit(1);
   }
 
