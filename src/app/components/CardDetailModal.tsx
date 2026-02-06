@@ -260,6 +260,13 @@ export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }
                       </div>
                     )}
 
+                    {!isEmpty(card.feature) && (
+                      <div>
+                        <div className="text-xs uppercase text-gray-500">Famille</div>
+                        <div>{card.feature}</div>
+                      </div>
+                    )}
+
                     {!isEmpty(card.power) && (
                       <div>
                         <div className="text-xs uppercase text-gray-500">Puissance</div>
@@ -267,12 +274,7 @@ export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }
                       </div>
                     )}
 
-                    {!isEmpty(card.feature) && (
-                      <div>
-                        <div className="text-xs uppercase text-gray-500">Famille</div>
-                        <div>{card.feature}</div>
-                      </div>
-                    )}
+
 
 
 
