@@ -24,7 +24,7 @@ async function testRelations() {
   // Vérification : récupérer la carte avec ses alias et rulings
   const fullCard = await prisma.card.findUnique({
     where: { id: card!.id },
-    include: { aliases: true, rulings: true },
+    include: { set: true, aliases: true, rulings: true },
   });
 
   console.log(JSON.stringify(fullCard, null, 2));

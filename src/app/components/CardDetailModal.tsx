@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { CometCard } from "@/components/ui/comet-card";
+import { CometCardBright } from "@/components/ui/comet-card-bright";
 import { useQueryClient } from "@tanstack/react-query";
 
 
@@ -198,7 +198,7 @@ export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }
               <div className="flex gap-6 flex-col  md:flex-row">
                 {/* Image */}
                 <div className="md:w-80">
-                <CometCard>
+                <CometCardBright>
                 <button
                     type="button"
                     className="w-full cursor-pointer rounded-lg bg-black/5 p-1"
@@ -216,7 +216,7 @@ export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }
                 }}
                 />
                 </button>
-                </CometCard>
+                </CometCardBright>
                   <div className="text-xs text-gray-500 mt-2">
                     Clique sur l’image pour zoomer
                   </div>
@@ -244,18 +244,20 @@ export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }
                       </div>
                     )}
 
-                    {!isEmpty(card.type) && (
-                      <div>
-                        <div className="text-xs uppercase text-gray-500">Type</div>
-                        <div>{card.type}</div>
-                      </div>
-                    )}
 
                     {!isEmpty(card.rarity) && (
                     <div>
                         <div className="text-xs uppercase text-gray-500">Rareté</div>
                         <div>{formatRarity(card.rarity, card.variant, card.set?.code)}</div>
                     </div>
+                    )}
+
+
+                    {!isEmpty(card.type) && (
+                      <div>
+                        <div className="text-xs uppercase text-gray-500">Type</div>
+                        <div>{card.type}</div>
+                      </div>
                     )}
 
                     {!isEmpty(card.power) && (

@@ -1,6 +1,8 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { CometCardBright } from "@/components/ui/comet-card-bright";
+
 
 type Badge = { text: string; tone: "neutral" | "blue" | "purple" | "gold" | "green"| "cyan" | "black"| "white"| "red" };
 
@@ -112,53 +114,58 @@ function badgeClass(tone: Badge["tone"]) {
 }
 
 export default function CardTile({
+  
   card,
   onClick,
   variantLabel,
   rarityLabel = defaultRarityLabel,
 }: CardTileProps) {
   const badges = useMemo(() => getBadges(card, rarityLabel), [card, rarityLabel]);
+  const [zoomOpen, setZoomOpen] = useState(false);
 
   return (
     <div className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden flex flex-col">
-      <div className="p-3 flex justify-center">
+      <div className="pt-6 flex justify-center">
         <button
           type="button"
           onClick={onClick}
           className="relative w-44 sm:w-48 cursor-pointer focus:outline-none"
-          aria-label={`Ouvrir ${card.name}`}
-        >
-          <div
-            className="
-              relative rounded-xl overflow-hidden transition-all duration-300
-              shadow-md hover:shadow-xl hover:-translate-y-0.5
-            "
-            style={{ transformStyle: "preserve-3d" }}
-          >
-            <div className="relative aspect-[2/3] bg-gradient-to-b from-zinc-900 to-zinc-950">
-              <img
-                alt={card.name}
-                loading="lazy"
-                className="w-full h-full object-contain"
-                src={card.illustrationUrl}
-              />
+          aria-label={`Ouvrir ${card.name}`}>
+            
+          <CometCardBright className="w-full">
+            <div
+              className="
+                relative rounded-xl overflow-hidden transition-all duration-300
+                
+              "
+              style={{ transformStyle: "preserve-3d" }}
+            >
+              <div className="relative from-zinc-900 to-zinc-950">
+                <img
+                  alt={card.name}
+                  loading="lazy"
+                  className="w-full h-full object-contain"
+                  src={card.illustrationUrl}
+                  style={{ transform: "translateZ(10px)" }}
+                />
 
-              {/* Badge V.x (si fourni)
-              {variantLabel && (
-                <div className="absolute top-1 right-1 bg-black/70 backdrop-blur text-white px-1.5 py-0.5 rounded text-[10px] font-bold">
-                  {variantLabel}
-                </div>
-              )} */}
+                {/* Badge V.x (si fourni)
+                {variantLabel && (
+                  <div className="absolute top-1 right-1 bg-black/70 backdrop-blur text-white px-1.5 py-0.5 rounded text-[10px] font-bold">
+                    {variantLabel}
+                  </div>
+                )} */}
 
-              <div
-                className="
-                  absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent
-                  opacity-0 hover:opacity-100 transition-opacity duration-500
-                "
-                style={{ transform: "translateZ(1px)" }}
-              />
+                <div
+                  className="
+                    absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent
+                    opacity-0 hover:opacity-100 transition-opacity duration-500
+                  "
+                  style={{ transform: "translateZ(1px)" }}
+                />
+              </div>
             </div>
-          </div>
+          </CometCardBright>
 
           <div className="mt-2 px-1 py-1 w-full h-12 flex flex-col justify-between">
             <div className="flex justify-between items-start gap-2">
