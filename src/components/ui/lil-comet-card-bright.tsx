@@ -10,9 +10,9 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export const CometCardBright = ({
-  rotateDepth = 5,
-  translateDepth = 5,
+export const LilCometCardBright = ({
+  rotateDepth = 2.5,
+  translateDepth = 2.5,
   className,
   children,
 }: {

@@ -1,6 +1,23 @@
 [
   {
-    "set": "OP-09",
+    "set": "",
+    "code": "OP06-119",
+    "variant": "p1",
+    "name": "Sanji",
+    "rarity": "TR",
+    "type": "PERSONNAGE",
+    "color": "Bleu",
+    "costOrLife": 9,
+    "power": 9000,
+    "counter": null,
+    "block": 2,
+    "feature": "Équipage de Chapeau de paille",
+    "text": "[Jouée] Révélez 1 carte du dessus de votre deck et jouez jusqu'à 1 Personnage ayant un coût de 9 ou moins autre que [Sanji]. Puis, placez les cartes restantes au-dessous de votre deck.",
+    "illustrationUrl": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP06-119_p1.webp?260119",
+    "status": "legal"
+  },
+  {
+    "set": "",
     "code": "OP09-001",
     "variant": "base",
     "name": "Shanks",
@@ -17,7 +34,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-001",
     "variant": "p1",
     "name": "Shanks",
@@ -34,7 +51,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-002",
     "variant": "base",
     "name": "Uta",
@@ -51,7 +68,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-002",
     "variant": "p1",
     "name": "Uta",
@@ -68,7 +85,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-003",
     "variant": "base",
     "name": "Shachi et Pingouin",
@@ -85,7 +102,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-004",
     "variant": "base",
     "name": "Shanks",
@@ -102,7 +119,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-004",
     "variant": "p1",
     "name": "Shanks",
@@ -119,7 +136,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-004",
     "variant": "p2",
     "name": "Shanks",
@@ -136,11 +153,11 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-004",
     "variant": "p3",
     "name": "Shanks",
-    "rarity": "",
+    "rarity": "SP CARD",
     "type": "PERSONNAGE",
     "color": "Rouge",
     "costOrLife": 10,
@@ -153,7 +170,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-005",
     "variant": "base",
     "name": "Silvers Rayleigh",
@@ -170,7 +187,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-006",
     "variant": "base",
     "name": "Howling Gab",
@@ -187,7 +204,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-007",
     "variant": "base",
     "name": "Heat",
@@ -204,7 +221,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-008",
     "variant": "base",
     "name": "Building Snake",
@@ -221,7 +238,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-009",
     "variant": "base",
     "name": "Ben Beckmann",
@@ -238,7 +255,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-009",
     "variant": "p1",
     "name": "Ben Beckmann",
@@ -255,7 +272,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-010",
     "variant": "base",
     "name": "Bonk Punch",
@@ -272,7 +289,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-011",
     "variant": "base",
     "name": "Hongo",
@@ -289,7 +306,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-012",
     "variant": "base",
     "name": "Monster",
@@ -306,7 +323,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-013",
     "variant": "base",
     "name": "Yasopp",
@@ -323,7 +340,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-014",
     "variant": "base",
     "name": "Limejuice",
@@ -340,7 +357,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-015",
     "variant": "base",
     "name": "Lucky Roo",
@@ -357,7 +374,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-016",
     "variant": "base",
     "name": "Rockstar",
@@ -374,7 +391,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-017",
     "variant": "base",
     "name": "Wire",
@@ -391,7 +408,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-018",
     "variant": "base",
     "name": "Disparais",
@@ -408,7 +425,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-019",
     "variant": "base",
     "name": "Sous aucun prétexte je ne pardonnerai à ceux qui s'en prennent à mes amis !!",
@@ -425,7 +442,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-020",
     "variant": "base",
     "name": "Qu'ils viennent !! On les attend de pied ferme !!",
@@ -442,7 +459,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-021",
     "variant": "base",
     "name": "Red Force",
@@ -459,7 +476,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-022",
     "variant": "base",
     "name": "Lim",
@@ -476,7 +493,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-022",
     "variant": "p1",
     "name": "Lim",
@@ -493,7 +510,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-023",
     "variant": "base",
     "name": "Adio",
@@ -510,7 +527,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-023",
     "variant": "p1",
     "name": "Adio",
@@ -527,7 +544,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-024",
     "variant": "base",
     "name": "Usopp",
@@ -544,7 +561,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-025",
     "variant": "base",
     "name": "Crocodile",
@@ -561,7 +578,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-026",
     "variant": "base",
     "name": "Sakazuki",
@@ -578,7 +595,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-027",
     "variant": "base",
     "name": "Sabo",
@@ -595,7 +612,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-028",
     "variant": "base",
     "name": "Sanji",
@@ -612,7 +629,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-029",
     "variant": "base",
     "name": "Tony-Tony Chopper",
@@ -629,7 +646,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-030",
     "variant": "base",
     "name": "Trafalgar Law",
@@ -646,7 +663,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-031",
     "variant": "base",
     "name": "Don Quijote Doflamingo",
@@ -663,7 +680,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-032",
     "variant": "base",
     "name": "Don Quijote Rosinante",
@@ -680,7 +697,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-033",
     "variant": "base",
     "name": "Nico Robin",
@@ -697,7 +714,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-034",
     "variant": "base",
     "name": "Perona",
@@ -714,7 +731,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-034",
     "variant": "p1",
     "name": "Perona",
@@ -731,7 +748,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-035",
     "variant": "base",
     "name": "Portgas D. Ace",
@@ -748,7 +765,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-036",
     "variant": "base",
     "name": "Monkey D. Luffy",
@@ -765,7 +782,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-037",
     "variant": "base",
     "name": "Lim",
@@ -782,7 +799,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-037",
     "variant": "p1",
     "name": "Lim",
@@ -799,7 +816,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-038",
     "variant": "base",
     "name": "Rob Lucci",
@@ -816,7 +833,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-039",
     "variant": "base",
     "name": "Gum Gum Cuatro Jet Cross Shock Bazooka",
@@ -833,7 +850,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-040",
     "variant": "base",
     "name": "Thunder Lance Flip Caliber Phoenix Shot",
@@ -850,7 +867,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-041",
     "variant": "base",
     "name": "Soul Franky Swing Arm Boxing Solid",
@@ -867,7 +884,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-042",
     "variant": "base",
     "name": "Baggy",
@@ -884,7 +901,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-042",
     "variant": "p1",
     "name": "Baggy",
@@ -901,7 +918,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-043",
     "variant": "base",
     "name": "Alvida",
@@ -918,7 +935,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-044",
     "variant": "base",
     "name": "Izo",
@@ -935,7 +952,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-045",
     "variant": "base",
     "name": "Cabaji",
@@ -952,7 +969,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-046",
     "variant": "base",
     "name": "Crocodile",
@@ -969,7 +986,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-046",
     "variant": "p1",
     "name": "Crocodile",
@@ -986,7 +1003,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-047",
     "variant": "base",
     "name": "Oden Kozuki",
@@ -1003,7 +1020,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-048",
     "variant": "base",
     "name": "Dracule Mihawk",
@@ -1020,7 +1037,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-048",
     "variant": "p1",
     "name": "Dracule Mihawk",
@@ -1037,7 +1054,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-049",
     "variant": "base",
     "name": "Joz",
@@ -1054,7 +1071,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-050",
     "variant": "base",
     "name": "Nami",
@@ -1071,7 +1088,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-050",
     "variant": "p1",
     "name": "Nami",
@@ -1088,7 +1105,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-051",
     "variant": "base",
     "name": "Baggy",
@@ -1105,7 +1122,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-051",
     "variant": "p1",
     "name": "Baggy",
@@ -1122,7 +1139,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-051",
     "variant": "p2",
     "name": "Baggy",
@@ -1139,11 +1156,11 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-051",
     "variant": "p3",
     "name": "Baggy",
-    "rarity": "",
+    "rarity": "SP CARD",
     "type": "PERSONNAGE",
     "color": "Bleu",
     "costOrLife": 10,
@@ -1156,7 +1173,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-052",
     "variant": "base",
     "name": "Marco",
@@ -1173,7 +1190,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-053",
     "variant": "base",
     "name": "Morge",
@@ -1190,7 +1207,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-054",
     "variant": "base",
     "name": "Richie",
@@ -1207,7 +1224,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-055",
     "variant": "base",
     "name": "Mr 1 (Das Bones)",
@@ -1224,7 +1241,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-056",
     "variant": "base",
     "name": "Mr 3 (Galdino)",
@@ -1241,7 +1258,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-057",
     "variant": "base",
     "name": "Cross Guild",
@@ -1258,7 +1275,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-058",
     "variant": "base",
     "name": "Maggy Ball spéciale",
@@ -1275,7 +1292,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-059",
     "variant": "base",
     "name": "Tour de passe-passe brouillard",
@@ -1292,7 +1309,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-060",
     "variant": "base",
     "name": "Île de Lacrahn-Ri",
@@ -1309,7 +1326,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-061",
     "variant": "base",
     "name": "Monkey D. Luffy",
@@ -1326,7 +1343,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-061",
     "variant": "p1",
     "name": "Monkey D. Luffy",
@@ -1343,7 +1360,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-062",
     "variant": "base",
     "name": "Nico Robin",
@@ -1360,7 +1377,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-062",
     "variant": "p1",
     "name": "Nico Robin",
@@ -1377,7 +1394,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-063",
     "variant": "base",
     "name": "Usopp",
@@ -1394,7 +1411,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-064",
     "variant": "base",
     "name": "Killer",
@@ -1411,7 +1428,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-065",
     "variant": "base",
     "name": "Sanji",
@@ -1428,7 +1445,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-065",
     "variant": "p1",
     "name": "Sanji",
@@ -1445,7 +1462,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-066",
     "variant": "base",
     "name": "Jean Bart",
@@ -1462,7 +1479,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-067",
     "variant": "base",
     "name": "Jinbe",
@@ -1479,7 +1496,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-068",
     "variant": "base",
     "name": "Tony-Tony Chopper",
@@ -1496,7 +1513,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-069",
     "variant": "base",
     "name": "Trafalgar Law",
@@ -1513,7 +1530,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-069",
     "variant": "p1",
     "name": "Trafalgar Law",
@@ -1530,7 +1547,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-070",
     "variant": "base",
     "name": "Nami",
@@ -1547,7 +1564,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-071",
     "variant": "base",
     "name": "Nico Robin",
@@ -1564,7 +1581,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-072",
     "variant": "base",
     "name": "Franky",
@@ -1581,7 +1598,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-072",
     "variant": "p1",
     "name": "Franky",
@@ -1598,7 +1615,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-073",
     "variant": "base",
     "name": "Brook",
@@ -1615,7 +1632,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-074",
     "variant": "base",
     "name": "Bepo",
@@ -1632,7 +1649,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-075",
     "variant": "base",
     "name": "Eustass \"Captain\" Kidd",
@@ -1649,7 +1666,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-076",
     "variant": "base",
     "name": "Roronoa Zoro",
@@ -1666,7 +1683,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-077",
     "variant": "base",
     "name": "Gum Gum Foudre",
@@ -1683,7 +1700,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-078",
     "variant": "base",
     "name": "Gum Gum Gigant",
@@ -1700,7 +1717,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-079",
     "variant": "base",
     "name": "Gum Gum Saut à la corde",
@@ -1717,7 +1734,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-080",
     "variant": "base",
     "name": "Thousand Sunny",
@@ -1734,7 +1751,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-081",
     "variant": "base",
     "name": "Marshall D. Teach",
@@ -1751,7 +1768,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-081",
     "variant": "p1",
     "name": "Marshall D. Teach",
@@ -1768,7 +1785,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-082",
     "variant": "base",
     "name": "Avalo Pizarro",
@@ -1785,7 +1802,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-083",
     "variant": "base",
     "name": "Van Auger",
@@ -1802,7 +1819,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-084",
     "variant": "base",
     "name": "Catarina Devon",
@@ -1819,7 +1836,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-085",
     "variant": "base",
     "name": "Gecko Moria",
@@ -1836,7 +1853,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-086",
     "variant": "base",
     "name": "Jesus Burgess",
@@ -1853,7 +1870,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-087",
     "variant": "base",
     "name": "Charlotte Pudding",
@@ -1870,7 +1887,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-088",
     "variant": "base",
     "name": "Shiliew",
@@ -1887,7 +1904,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-089",
     "variant": "base",
     "name": "Stronger",
@@ -1904,7 +1921,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-090",
     "variant": "base",
     "name": "Doc Q",
@@ -1921,7 +1938,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-091",
     "variant": "base",
     "name": "Vasco Shot",
@@ -1938,7 +1955,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-092",
     "variant": "base",
     "name": "Marshall D. Teach",
@@ -1955,7 +1972,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-093",
     "variant": "base",
     "name": "Marshall D. Teach",
@@ -1972,7 +1989,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-093",
     "variant": "p1",
     "name": "Marshall D. Teach",
@@ -1989,7 +2006,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-093",
     "variant": "p2",
     "name": "Marshall D. Teach",
@@ -2006,7 +2023,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-093",
     "variant": "p3",
     "name": "Marshall D. Teach",
@@ -2023,7 +2040,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-094",
     "variant": "base",
     "name": "Barbe Rose",
@@ -2040,7 +2057,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-095",
     "variant": "base",
     "name": "Laffitte",
@@ -2057,7 +2074,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-096",
     "variant": "base",
     "name": "L'avènement de mon règne !!",
@@ -2074,7 +2091,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-097",
     "variant": "base",
     "name": "Tourbillon noir",
@@ -2091,7 +2108,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-098",
     "variant": "base",
     "name": "Black Hole",
@@ -2108,7 +2125,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-099",
     "variant": "base",
     "name": "Ruche",
@@ -2125,7 +2142,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-100",
     "variant": "base",
     "name": "Corbeau",
@@ -2142,7 +2159,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-101",
     "variant": "base",
     "name": "Kuzan",
@@ -2159,7 +2176,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-102",
     "variant": "base",
     "name": "Professeur Clover",
@@ -2176,7 +2193,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-103",
     "variant": "base",
     "name": "Koala",
@@ -2193,7 +2210,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-103",
     "variant": "p1",
     "name": "Koala",
@@ -2210,7 +2227,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-104",
     "variant": "base",
     "name": "Sabo",
@@ -2227,7 +2244,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-105",
     "variant": "base",
     "name": "Sanji",
@@ -2244,7 +2261,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-106",
     "variant": "base",
     "name": "Nico Olvia",
@@ -2261,7 +2278,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-107",
     "variant": "base",
     "name": "Nico Robin",
@@ -2278,7 +2295,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-107",
     "variant": "p1",
     "name": "Nico Robin",
@@ -2295,7 +2312,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-108",
     "variant": "base",
     "name": "Bartholomew Kuma",
@@ -2312,7 +2329,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-109",
     "variant": "base",
     "name": "Haguar D. Sauro",
@@ -2329,7 +2346,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-110",
     "variant": "base",
     "name": "Pierre",
@@ -2346,7 +2363,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-111",
     "variant": "base",
     "name": "Brook",
@@ -2363,7 +2380,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-112",
     "variant": "base",
     "name": "Belo Betty",
@@ -2380,7 +2397,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-113",
     "variant": "base",
     "name": "Morley",
@@ -2397,7 +2414,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-114",
     "variant": "base",
     "name": "Lindbergh",
@@ -2414,7 +2431,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-115",
     "variant": "base",
     "name": "Ice Block Partisan",
@@ -2431,7 +2448,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-116",
     "variant": "base",
     "name": "Les miracles n'arrivent qu'à ceux qui ont la volonté de se battre !!",
@@ -2448,7 +2465,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-117",
     "variant": "base",
     "name": "Dereshi",
@@ -2465,7 +2482,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-118",
     "variant": "base",
     "name": "Gol D. Roger",
@@ -2482,7 +2499,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-118",
     "variant": "p1",
     "name": "Gol D. Roger",
@@ -2499,7 +2516,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-118",
     "variant": "p2",
     "name": "Gol D. Roger",
@@ -2516,7 +2533,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-119",
     "variant": "base",
     "name": "Monkey D. Luffy",
@@ -2533,7 +2550,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-119",
     "variant": "p1",
     "name": "Monkey D. Luffy",
@@ -2550,7 +2567,7 @@
     "status": "legal"
   },
   {
-    "set": "OP-09",
+    "set": "",
     "code": "OP09-119",
     "variant": "p2",
     "name": "Monkey D. Luffy",
@@ -2564,6 +2581,125 @@
     "feature": "Équipage de Chapeau de paille",
     "text": "[Jouée] Vous pouvez renvoyer à votre deck DON!! 1 carte DON!! ou plus de votre terrain : Piochez 1 carte ; ce Personnage gagne [Initiative] pour tout le tour.",
     "illustrationUrl": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP09-119_p2.webp?260119",
+    "status": "legal"
+  },
+  {
+    "set": "",
+    "code": "OP04-119",
+    "variant": "p1",
+    "name": "Don Quijote Rosinante",
+    "rarity": "SP CARD",
+    "type": "PERSONNAGE",
+    "color": "Vert",
+    "costOrLife": 8,
+    "power": 8000,
+    "counter": null,
+    "block": 1,
+    "feature": "Marine/Équipage de Don Quijote",
+    "text": "[Tour adverse] Si ce Personnage est épuisé, vos Personnages redressés ayant un coût de base de 5 ne peuvent pas être mis KO par un effet. [Jouée] Vous pouvez épuiser ce Personnage : Jouez jusqu'à 1 carte Personnage verte de votre main ayant un coût de 5.",
+    "illustrationUrl": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP04-119_p1.webp?260119",
+    "status": "legal"
+  },
+  {
+    "set": "",
+    "code": "OP05-067",
+    "variant": "p1",
+    "name": "Zorojuro",
+    "rarity": "SP CARD",
+    "type": "PERSONNAGE",
+    "color": "Violet",
+    "costOrLife": 3,
+    "power": 4000,
+    "counter": 1000,
+    "block": 2,
+    "feature": "Équipage de Chapeau de paille",
+    "text": "[En attaquant] Si vous avez 3 cartes ou moins dans votre Vie, ajoutez jusqu'à 1 carte DON!! redressée de votre deck DON!!.",
+    "illustrationUrl": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP05-067_p1.webp?260119",
+    "status": "legal"
+  },
+  {
+    "set": "",
+    "code": "OP05-093",
+    "variant": "p1",
+    "name": "Rob Lucci",
+    "rarity": "SP CARD",
+    "type": "PERSONNAGE",
+    "color": "Noir",
+    "costOrLife": 4,
+    "power": 6000,
+    "counter": null,
+    "block": 2,
+    "feature": "CP-0",
+    "text": "[Jouée] Vous pouvez placer 3 cartes de votre Défausse au-dessous de votre deck dans l'ordre de votre choix : Mettez KO jusqu'à 1 Personnage adverse ayant un coût de 2 ou moins et jusqu'à 1 Personnage adverse ayant un coût de 1 ou moins.",
+    "illustrationUrl": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP05-093_p1.webp?260119",
+    "status": "legal"
+  },
+  {
+    "set": "",
+    "code": "OP05-119",
+    "variant": "p1",
+    "name": "Monkey D. Luffy",
+    "rarity": "SP CARD",
+    "type": "PERSONNAGE",
+    "color": "Violet",
+    "costOrLife": 10,
+    "power": 12000,
+    "counter": null,
+    "block": 2,
+    "feature": "Quatre Empereurs/Équipage de Chapeau de paille",
+    "text": "[Jouée] DON!! -10 : Placez tous vos Personnages autres que celui-ci au-dessous de votre deck dans l'ordre de votre choix. Puis, jouez un nouveau tour après celui-ci. [Activation : Principale] [Une fois par tour] Vous pouvez épuiser 1 de vos cartes DON!! : Ajoutez jusqu'à 1 carte DON!! redressée de votre deck DON!!.",
+    "illustrationUrl": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP05-119_p1.webp?260119",
+    "status": "legal"
+  },
+  {
+    "set": "",
+    "code": "OP07-015",
+    "variant": "p1",
+    "name": "Monkey D. Dragon",
+    "rarity": "SP CARD",
+    "type": "PERSONNAGE",
+    "color": "Rouge",
+    "costOrLife": 8,
+    "power": 9000,
+    "counter": null,
+    "block": 2,
+    "feature": "Armée révolutionnaire",
+    "text": "[Initiative] (Cette carte peut attaquer durant le tour où elle est jouée.) [Jouée] Donnez jusqu'à 2 cartes DON!! épuisées à votre Leader ou à 1 de vos Personnages.",
+    "illustrationUrl": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP07-015_p1.webp?260119",
+    "status": "legal"
+  },
+  {
+    "set": "",
+    "code": "OP07-051",
+    "variant": "p1",
+    "name": "Boa Hancock",
+    "rarity": "SP CARD",
+    "type": "PERSONNAGE",
+    "color": "Bleu",
+    "costOrLife": 6,
+    "power": 8000,
+    "counter": null,
+    "block": 2,
+    "feature": "Sept grands corsaires/Équipage des Kuja",
+    "text": "[Jouée] Jusqu'à 1 Personnage adverse autre que [Monkey D. Luffy] ne peut pas attaquer jusqu'à la fin du prochain tour adverse. Puis, placez au-dessous du deck de son propriétaire jusqu'à 1 Personnage ayant un coût de 1 ou moins.",
+    "illustrationUrl": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP07-051_p1.webp?260119",
+    "status": "legal"
+  },
+  {
+    "set": "",
+    "code": "OP08-106",
+    "variant": "p1",
+    "name": "Nami",
+    "rarity": "SP CARD",
+    "type": "PERSONNAGE",
+    "color": "Jaune",
+    "costOrLife": 5,
+    "power": 5000,
+    "counter": 1000,
+    "block": 2,
+    "feature": "Egg Head/Équipage de Chapeau de paille",
+    "text": "[Jouée] Vous pouvez défausser 1 carte de votre main ayant [Déclenchement] : Mettez KO jusqu'à 1 Personnage adverse ayant un coût de 5 ou moins. Puis, si vous avez 3 cartes ou moins dans votre main, piochez 1 carte.",
+    "illustrationUrl": "https://fr.onepiece-cardgame.com/images/cardlist/card/OP08-106_p1.webp?260119",
     "status": "legal"
   }
 ]

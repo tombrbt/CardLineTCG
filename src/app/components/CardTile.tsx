@@ -1,10 +1,32 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { CometCardBright } from "@/components/ui/comet-card-bright";
+import { LilCometCardBright } from "@/components/ui/lil-comet-card-bright";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
+function badgeTooltipText(badgeText: string) {
+  const map: Record<string, string> = {
+    C: "Commune",
+    UC: "Peu Commune",
+    R: "Rare",
+    SR: "Super Rare",
+    L: "Leader",
+    SEC: "Secrète",
+    TR: "Treasure Rare",
+    SP: "Spécial",
+    "SP CARD": "Spécial",
 
-type Badge = { text: string; tone: "neutral" | "blue" | "purple" | "gold" | "green"| "cyan" | "black"| "white"| "red" };
+  };
+
+  return map[badgeText] ?? badgeText;
+}
+
+type Badge = { text: string; tone: "neutral" | "blue" | "purple" | "gold" | "green" | "cyan" | "black" | "white" | "red" };
 
 type CardTileProps = {
   card: {
@@ -21,11 +43,16 @@ type CardTileProps = {
 
   // si tu veux afficher des labels de rareté plus humains
   rarityLabel?: (r: string) => string;
+
+  // ✅ nouveau
+  isSoloNonBase?: boolean;
 };
 
 function defaultRarityLabel(r: string) {
   return r;
 }
+
+
 
 function rarityTone(r: string): Badge["tone"] {
   switch (r) {
@@ -41,29 +68,45 @@ function rarityTone(r: string): Badge["tone"] {
       return "red";
     case "SEC":
       return "gold";
+    case "SP CARD":
+      return "gold";
+ 
     default:
       return "neutral";
   }
 }
 
-// ====== TES RÈGLES BADGES (copié/aligné) ======
-function getBadges(card: any, rarityLabelFn: (r: string) => string): Badge[] {
-  const badges: Badge[] = [];
 
-  // Variants OP-09 (prioritaires)
-  if (card.variant === "p3") {
-    return [{ text: "SP", tone: "gold" }];
-  }
+function getBadges(card: any, rarityLabelFn: (r: string) => string, isSoloNonBase?: boolean): Badge[] {
+  // ✅ Prioritaires d'abord
+  if (card.variant === "p3") return [{ text: "SP", tone: "gold" }];
+  if (card.rarity === "TR") return [{ text: "TR", tone: "gold" }];
+
+
 
   if (card.variant === "p2") {
+    // TR / SP CARD ne doivent jamais apparaître comme Manga
+    if (card.rarity === "TR" || card.rarity === "SP CARD") {
+      return [{ text: rarityLabelFn(card.rarity), tone: "gold" }];
+    }
     return [{ text: "Manga", tone: "purple" }];
+    
+   
   }
 
-  if (card.variant === "p1") {
+  const badges: Badge[] = [];
+
+  // ✅ "solo non-base" : on retire juste "Alternative"
+  const canShowAlternative =
+    card.variant === "p1" &&
+    card.rarity !== "TR" &&
+    card.rarity !== "SP CARD";
+
+    
+  if (canShowAlternative) {
     badges.push({ text: "Alternative", tone: "black" });
   }
 
-  // Badge de rareté (toujours affiché sauf p3)
   if (card.rarity) {
     badges.push({
       text: rarityLabelFn(card.rarity),
@@ -114,14 +157,16 @@ function badgeClass(tone: Badge["tone"]) {
 }
 
 export default function CardTile({
-  
   card,
   onClick,
   variantLabel,
   rarityLabel = defaultRarityLabel,
+  isSoloNonBase,
 }: CardTileProps) {
-  const badges = useMemo(() => getBadges(card, rarityLabel), [card, rarityLabel]);
-  const [zoomOpen, setZoomOpen] = useState(false);
+  const badges = useMemo(
+    () => getBadges(card, rarityLabel, isSoloNonBase),
+    [card, rarityLabel, isSoloNonBase]
+  );
 
   return (
     <div className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden flex flex-col">
@@ -131,8 +176,8 @@ export default function CardTile({
           onClick={onClick}
           className="relative w-44 sm:w-48 cursor-pointer focus:outline-none"
           aria-label={`Ouvrir ${card.name}`}>
-            
-          <CometCardBright className="w-full">
+
+          <LilCometCardBright className="w-full">
             <div
               className="
                 relative rounded-xl overflow-hidden transition-all duration-300
@@ -150,10 +195,10 @@ export default function CardTile({
                 />
 
                 {/* Badge V.x (si fourni)
-                {variantLabel && (
-                  <div className="absolute top-1 right-1 bg-black/70 backdrop-blur text-white px-1.5 py-0.5 rounded text-[10px] font-bold">
-                    {variantLabel}
-                  </div>
+                // {variantLabel && (
+                //   <div className="absolute top-1 right-1 bg-black/70 backdrop-blur text-white px-1.5 py-0.5 rounded text-[10px] font-bold">
+                //     {variantLabel}
+                //   </div>
                 )} */}
 
                 <div
@@ -165,7 +210,7 @@ export default function CardTile({
                 />
               </div>
             </div>
-          </CometCardBright>
+          </LilCometCardBright>
 
           <div className="mt-2 px-1 py-1 w-full h-12 flex flex-col justify-between">
             <div className="flex justify-between items-start gap-2">
@@ -174,13 +219,28 @@ export default function CardTile({
               </h3>
 
               {/* Badges alignés en face du nom */}
-              <div className="flex flex-wrap gap-1 justify-end shrink-0">
-                {badges.map((b, i) => (
-                  <span key={`${b.text}-${i}`} className={badgeClass(b.tone)}>
-                    {b.text}
-                  </span>
-                ))}
-              </div>
+              <TooltipProvider delayDuration={10}>
+                <div className="flex flex-wrap gap-1 justify-end shrink-0">
+                  {badges.map((b, i) => (
+                    <Tooltip key={`${b.text}-${i}`}>
+                      <TooltipTrigger asChild>
+                        <span
+                          key={`${b.text}-${i}`}
+                          className={badgeClass(b.tone)}
+                          title={badgeTooltipText(b.text)}>
+                          {b.text}
+                        </span>
+                      </TooltipTrigger>
+                      <TooltipContent
+                        side="top"
+                        className="text-xs px-2 py-1 bg-zinc-900 text-zinc-100 border border-zinc-700"
+                      >
+                        {badgeTooltipText(b.text)}
+                      </TooltipContent>
+                    </Tooltip>
+                  ))}
+                </div>
+              </TooltipProvider>
             </div>
 
             <div className="flex justify-between items-end text-[11px] text-zinc-500 font-mono">

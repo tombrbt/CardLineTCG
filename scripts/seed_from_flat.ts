@@ -29,7 +29,7 @@ async function main() {
     create: {
       code: setCode,
       name_fr: setCode === "OP-09" ? "Les Nouveaux Empereurs" : setCode,
-      name_en: setCode === "OP-09" ? "Emperors in the New World" : setCode,
+      name_en: setCode === "OP-09" ? "Emperors in The New World" : setCode,
       releaseDate: new Date("2024-12-01"),
       type: "booster",
     },

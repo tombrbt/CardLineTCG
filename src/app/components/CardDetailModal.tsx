@@ -26,32 +26,46 @@ function isEmpty(v: any) {
 function formatVariantLabel(variant: string) {
   if (!variant || variant === "base") return "";
   return ` (${variant.toUpperCase()})`;
+
+  
 }
 
 function formatRarity(rarity: string, variant: string, setCode?: string) {
-    if (!rarity) return "";
+  if (!rarity) return "";
+
+  const rarityMap: Record<string, string> = {
+    C: "Commune",
+    UC: "Non Commune",
+    R: "Rare",
+    SR: "Super Rare",
+    L: "Leader",
+    SEC: "Secrète",
+    TR: "Treasure Rare",
+    "SP CARD": "Spécial",
   
-    // Traduction des raretés
-    const rarityMap: Record<string, string> = {
-      C: "Commune",
-      UC: "Non Commune",
-      R: "Rare",
-      SR: "Super Rare",
-      L: "Leader",
-      SEC: "Secrète",
-    };
-  
-    const translatedRarity = rarityMap[rarity] ?? rarity;
-  
-    // Règles spécifiques OP-09
-    if (setCode === "OP-09") {
-      if (variant === "p1") return `${translatedRarity} (Alternative)`;
-      if (variant === "p2") return `Manga`;
-      if (variant === "p3") return "Spécial";
-    }
-  
+    // on laisse TR / SP CARD tels quels (ou tu peux les mapper si tu veux)
+  };
+
+  const translatedRarity = rarityMap[rarity] ?? rarity;
+
+  // ✅ EXCEPTION : si c’est une carte "bonus" (TR/SP CARD) en p1 -> PAS "Alternative"
+  if (variant === "p1" && (rarity === "TR" || rarity === "SP CARD")) {
     return translatedRarity;
   }
+
+  // ✅ EXCEPTION : si c’est une carte "bonus" (TR/SP CARD) en p1 -> PAS "Alternative"
+  if (variant === "p2" && (rarity === "TR" || rarity === "SP CARD")) {
+    return translatedRarity;
+  }
+
+  // ✅ Règles variantes (valables pour toutes les séries)
+  if (variant === "p1") return `${translatedRarity} (Alternative)`;
+  if (variant === "p2") return "Manga";
+  if (variant === "p3") return "Spécial";
+
+  return translatedRarity;
+}
+
 
 export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }: CardDetailModalProps) {
   const [zoomOpen, setZoomOpen] = useState(false);
