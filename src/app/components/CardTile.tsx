@@ -2,12 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { LilCometCardBright } from "@/components/ui/lil-comet-card-bright";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
+import Image from "next/image";
 
 function badgeTooltipText(badgeText: string) {
   const map: Record<string, string> = {
@@ -168,6 +164,7 @@ export default function CardTile({
     [card, rarityLabel, isSoloNonBase]
   );
 
+  const [imgLoaded, setImgLoaded] = useState(false);
   return (
     <div className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden flex flex-col">
       <div className="pt-6 flex justify-center">
@@ -175,59 +172,63 @@ export default function CardTile({
           type="button"
           onClick={onClick}
           className="relative w-44 sm:w-48 cursor-pointer focus:outline-none"
-          aria-label={`Ouvrir ${card.name}`}>
-
+          aria-label={`Ouvrir ${card.name}`}
+        >
           <LilCometCardBright className="w-full">
             <div
-              className="
-                relative rounded-xl overflow-hidden transition-all duration-300
-                
-              "
+              className="relative rounded-xl overflow-hidden transition-all duration-300"
               style={{ transformStyle: "preserve-3d" }}
             >
               <div className="relative from-zinc-900 to-zinc-950">
-                <img
-                  alt={card.name}
-                  loading="lazy"
-                  className="w-full h-full object-contain"
-                  src={card.illustrationUrl}
-                  style={{ transform: "translateZ(10px)" }}
-                />
-
-                {/* Badge V.x (si fourni)
-                // {variantLabel && (
-                //   <div className="absolute top-1 right-1 bg-black/70 backdrop-blur text-white px-1.5 py-0.5 rounded text-[10px] font-bold">
-                //     {variantLabel}
-                //   </div>
-                )} */}
-
+                {/* Wrapper image + skeleton */}
+                <div className="relative">
+                  {/* Skeleton */}
+                  {!imgLoaded && (
+                    <div className="absolute inset-0 rounded-xl bg-zinc-700 animate-pulse" />
+                  )}
+  
+                <Image
+                src={card.illustrationUrl}
+                alt={card.name}
+                width={240}
+                height={336}
+                sizes="(max-width: 640px) 176px, 192px"
+                quality={55}
+                loading="lazy"
+                className={[
+                  "w-full h-full object-contain transition-opacity duration-300",
+                  imgLoaded ? "opacity-100" : "opacity-0",
+                ].join(" ")}
+                style={{ transform: "translateZ(10px)" }}
+                onLoad={() => setImgLoaded(true)}
+              />
+                   
+                
+                </div>
+  
                 <div
-                  className="
-                    absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent
-                    opacity-0 hover:opacity-100 transition-opacity duration-500
-                  "
+                  className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500"
                   style={{ transform: "translateZ(1px)" }}
                 />
               </div>
             </div>
           </LilCometCardBright>
-
+  
           <div className="mt-2 px-1 py-1 w-full h-12 flex flex-col justify-between">
             <div className="flex justify-between items-start gap-2">
               <h3 className="text-xs font-medium text-white truncate" title={card.name}>
                 {card.name}
               </h3>
-
-              {/* Badges alignés en face du nom */}
+  
               <TooltipProvider delayDuration={10}>
                 <div className="flex flex-wrap gap-1 justify-end shrink-0">
                   {badges.map((b, i) => (
                     <Tooltip key={`${b.text}-${i}`}>
                       <TooltipTrigger asChild>
                         <span
-                          key={`${b.text}-${i}`}
                           className={badgeClass(b.tone)}
-                          title={badgeTooltipText(b.text)}>
+                          title={badgeTooltipText(b.text)}
+                        >
                           {b.text}
                         </span>
                       </TooltipTrigger>
@@ -242,19 +243,15 @@ export default function CardTile({
                 </div>
               </TooltipProvider>
             </div>
-
+  
             <div className="flex justify-between items-end text-[11px] text-zinc-500 font-mono">
               <span>{card.code}</span>
-              {/* petit hint optionnel à droite (tu peux enlever si tu veux) */}
               <span className="opacity-60">{variantLabel} </span>
             </div>
           </div>
-
+  
           <div
-            className="
-              w-full h-6 mx-auto -mt-1 bg-gradient-to-b from-black/20 to-transparent
-              rounded-full blur-sm opacity-0 hover:opacity-100 transition-opacity duration-300
-            "
+            className="w-full h-6 mx-auto -mt-1 bg-gradient-to-b from-black/20 to-transparent rounded-full blur-sm opacity-0 hover:opacity-100 transition-opacity duration-300"
             style={{ transform: "scaleX(0.85) translateY(-50%)" }}
           />
         </button>

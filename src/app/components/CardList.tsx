@@ -5,7 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 import CardDetailModal from "./CardDetailModal";
 import { useQueryClient } from "@tanstack/react-query";
 import CardTile from "./CardTile";
-
+import { AnimatePresence } from "framer-motion";
 
 function rarityLabel(r: string) {
   const map: Record<string, string> = {
@@ -77,7 +77,7 @@ export default function CardList() {
     // if (sort) params.append("sort", sort);
 
     params.append("page", String(page));
-    params.append("pageSize", "50");
+    params.append("pageSize", "20");
 
     return `/api/cards?${params.toString()}`;
   };
@@ -97,6 +97,8 @@ export default function CardList() {
 
   const { data: famData } = useQuery<FamiliesResponse>({
     queryKey: ["families", setCode], // setCode = ton select d’extension si tu l’as, sinon "OP-09"
+    enabled: !!setCode,            // ✅ pas de call si pas d’extension
+    staleTime: 1000 * 60 * 60,     // ✅ 1h
     queryFn: async () => {
       const res = await fetch(`/api/meta/families?set=${encodeURIComponent(setCode || "OP-09")}`);
       if (!res.ok) throw new Error("Erreur API families");
@@ -111,6 +113,7 @@ export default function CardList() {
 
   const { data: setsData } = useQuery<SetsResponse>({
     queryKey: ["sets"],
+    staleTime: 1000 * 60 * 60,     // ✅ 1h
     queryFn: async () => {
       const res = await fetch("/api/meta/sets");
       if (!res.ok) throw new Error("Erreur API sets");
@@ -145,38 +148,6 @@ export default function CardList() {
 
     return null;
   }
-
-  // // 1) map code -> set des variants présents dans la liste actuelle
-  // const variantsByCode = useMemo(() => {
-  //   const m = new Map<string, Set<string>>();
-  //   for (const c of cards) {
-  //     const code = String(c.code);
-  //     if (!m.has(code)) m.set(code, new Set());
-  //     m.get(code)!.add(String(c.variant || "base"));
-  //   }
-  //   return m;
-  // }, [cards]);
-
-  // 2) mapping variant -> V.x selon tes règles
-  // function getVLabel(code: string, variant: string) {
-  //   const set = variantsByCode.get(code);
-  //   const hasP3 = set?.has("p3") ?? false;
-
-  //   if (!variant || variant === "base") return "V.1";
-  //   if (variant === "p1") return "V.2";
-
-  //   if (hasP3) {
-  //     // cas avec V.4 existante : V.3 = p3, V.4 = p2
-  //     if (variant === "p3") return "V.3";
-  //     if (variant === "p2") return "V.4";
-  //   } else {
-  //     // cas sans p3 : V.3 = p2
-  //     if (variant === "p2") return "V.3";
-  //   }
-
-  //   return null;
-  // }
-
 
   const queryClient = useQueryClient();
 
@@ -223,18 +194,6 @@ export default function CardList() {
       staleTime: 1000 * 60 * 5,
     });
   }, [data, page, deferredSearch, color, type, rarity, family, queryClient]);
-
-  const prefetchCard = (id: number) => {
-    queryClient.prefetchQuery({
-      queryKey: ["card", id],
-      queryFn: async () => {
-        const res = await fetch(`/api/cards/${id}`);
-        if (!res.ok) throw new Error("Erreur API");
-        return res.json();
-      },
-      staleTime: 1000 * 60 * 10,
-    });
-  };
 
 
   return (
@@ -343,22 +302,22 @@ export default function CardList() {
 
 
         {cards.map((card: any) => {
-  const variantsSet = getVariantsSet(card);
-  const isSoloNonBase = variantsSet.size === 1 && String(card.variant) !== "base";
+          const variantsSet = getVariantsSet(card);
+          const isSoloNonBase = variantsSet.size === 1 && String(card.variant) !== "base";
 
-  const hideVariantLabel = card.rarity === "TR" || card.rarity === "SP CARD";
+          const hideVariantLabel = card.rarity === "TR" || card.rarity === "SP CARD";
 
-  return (
-    <CardTile
-      key={card.id}
-      card={card}
-      variantLabel={hideVariantLabel ? null : getVLabel(card.code, card.variant, variantsSet)}
-      onClick={() => setSelectedCardId(card.id)}
-      rarityLabel={rarityLabel}
-      isSoloNonBase={isSoloNonBase}
-    />
-  );
-})}
+          return (
+            <CardTile
+              key={card.id}
+              card={card}
+              variantLabel={hideVariantLabel ? null : getVLabel(card.code, card.variant, variantsSet)}
+              onClick={() => setSelectedCardId(card.id)}
+              rarityLabel={rarityLabel}
+              isSoloNonBase={isSoloNonBase}
+            />
+          );
+        })}
       </div>
       {/* Pagination */}
       <div className="mt-6 flex justify-center gap-2 items-center">
@@ -384,12 +343,16 @@ export default function CardList() {
 
 
       </div>
-      <CardDetailModal
-        cardId={selectedCardId}
-        cardIds={cardIds}
-        onClose={() => setSelectedCardId(null)}
-        onNavigate={(id) => setSelectedCardId(id)}
-      />
+      <AnimatePresence>
+  {selectedCardId != null && (
+    <CardDetailModal
+      cardId={selectedCardId}
+      cardIds={cardIds}
+      onClose={() => setSelectedCardId(null)}
+      onNavigate={(id) => setSelectedCardId(id)}
+    />
+  )}
+</AnimatePresence>
     </div>
 
   );

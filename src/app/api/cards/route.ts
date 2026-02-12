@@ -136,6 +136,7 @@ if (isPriceSort) {
     },
   });
 
+
   const byId = new Map(cardsUnordered.map((c) => [c.id, c]));
   const cards = pageIds.map((id) => byId.get(id)).filter(Boolean);
 
@@ -183,4 +184,6 @@ if (isPriceSort) {
     totalPages: Math.ceil(total / pageSize),
     cards,
   });
+
+  
 }

@@ -28,8 +28,8 @@ async function main() {
     update: {},
     create: {
       code: setCode,
-      name_fr: setCode === "OP-09" ? "Les Nouveaux Empereurs" : setCode,
-      name_en: setCode === "OP-09" ? "Emperors in The New World" : setCode,
+      name_fr: setCode === "OP-11" ? "Des Poings Vifs Comme L'Éclair" : setCode,
+      name_en: setCode === "OP-11" ? "A Fist Of Divine Speed" : setCode,
       releaseDate: new Date("2024-12-01"),
       type: "booster",
     },
