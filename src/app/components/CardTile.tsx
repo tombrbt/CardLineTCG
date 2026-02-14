@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { LilCometCardBright } from "@/components/ui/lil-comet-card-bright";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import Image from "next/image";
 
 function badgeTooltipText(badgeText: string) {
@@ -15,6 +15,8 @@ function badgeTooltipText(badgeText: string) {
     SEC: "Secrète",
     TR: "Treasure Rare",
     SP: "Spécial",
+    Alt: "Alternative",
+    Doyens: "Cinq Doyens",
     "SP CARD": "Spécial",
 
   };
@@ -66,7 +68,7 @@ function rarityTone(r: string): Badge["tone"] {
       return "gold";
     case "SP CARD":
       return "gold";
- 
+
     default:
       return "neutral";
   }
@@ -74,9 +76,30 @@ function rarityTone(r: string): Badge["tone"] {
 
 
 function getBadges(card: any, rarityLabelFn: (r: string) => string, isSoloNonBase?: boolean): Badge[] {
+
+// ===== OP13 DOYENS (p2 uniquement) =====
+if ((card.code === "OP13-080" || card.code === "OP13-083" || card.code === "OP13-084" || card.code === "OP13-089" || card.code === "OP13-091") &&
+  card.variant === "p2"
+) {
+  return [{ text: "Doyens", tone: "red" }];
+}
+
+  // ✅ RÈGLE SPÉCIALE OP13-118
+if (card.code === "OP13-118" || card.code === "OP13-119" || card.code === "OP13-120") {
+  if (card.variant === "p4") return [{ text: "SP", tone: "gold" }];
+
+  if (card.variant === "p2" ) {
+    return [{ text: "Manga", tone: "purple" }]; // ✅ Red Manga
+  }
+  if (card.variant === "p3" ) {
+    return [{ text: "Red Manga", tone: "red" }]; // ✅ Red Manga
+  }
+}
+
   // ✅ Prioritaires d'abord
   if (card.variant === "p3") return [{ text: "SP", tone: "gold" }];
   if (card.rarity === "TR") return [{ text: "TR", tone: "gold" }];
+  if (card.rarity === "SR SP") return [{ text: "SP", tone: "gold" }];
 
 
 
@@ -86,8 +109,8 @@ function getBadges(card: any, rarityLabelFn: (r: string) => string, isSoloNonBas
       return [{ text: rarityLabelFn(card.rarity), tone: "gold" }];
     }
     return [{ text: "Manga", tone: "purple" }];
-    
-   
+
+
   }
 
   const badges: Badge[] = [];
@@ -98,9 +121,9 @@ function getBadges(card: any, rarityLabelFn: (r: string) => string, isSoloNonBas
     card.rarity !== "TR" &&
     card.rarity !== "SP CARD";
 
-    
+
   if (canShowAlternative) {
-    badges.push({ text: "Alternative", tone: "black" });
+    badges.push({ text: "Alt", tone: "black" });
   }
 
   if (card.rarity) {
@@ -186,26 +209,25 @@ export default function CardTile({
                   {!imgLoaded && (
                     <div className="absolute inset-0 rounded-xl bg-zinc-700 animate-pulse" />
                   )}
-  
-                <Image
-                src={card.illustrationUrl}
-                alt={card.name}
-                width={240}
-                height={336}
-                sizes="(max-width: 640px) 176px, 192px"
-                quality={55}
-                loading="lazy"
-                className={[
-                  "w-full h-full object-contain transition-opacity duration-300",
-                  imgLoaded ? "opacity-100" : "opacity-0",
-                ].join(" ")}
-                style={{ transform: "translateZ(10px)" }}
-                onLoad={() => setImgLoaded(true)}
-              />
-                   
-                
+
+                  <Image
+                    src={card.illustrationUrl}
+                    alt={card.name}
+                    width={240}
+                    height={336}
+                    sizes="(max-width: 640px) 176px, 192px"
+                    quality={60}
+                    loading="lazy"
+                    className={[
+                      "w-full h-full object-contain transition-opacity duration-300",
+                      imgLoaded ? "opacity-100" : "opacity-0",
+                    ].join(" ")}
+                    style={{ transform: "translateZ(10px)" }}
+                    onLoad={() => setImgLoaded(true)}
+                  />
+
                 </div>
-  
+
                 <div
                   className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500"
                   style={{ transform: "translateZ(1px)" }}
@@ -213,13 +235,13 @@ export default function CardTile({
               </div>
             </div>
           </LilCometCardBright>
-  
+
           <div className="mt-2 px-1 py-1 w-full h-12 flex flex-col justify-between">
             <div className="flex justify-between items-start gap-2">
               <h3 className="text-xs font-medium text-white truncate" title={card.name}>
                 {card.name}
               </h3>
-  
+
               <TooltipProvider delayDuration={10}>
                 <div className="flex flex-wrap gap-1 justify-end shrink-0">
                   {badges.map((b, i) => (
@@ -243,13 +265,13 @@ export default function CardTile({
                 </div>
               </TooltipProvider>
             </div>
-  
+
             <div className="flex justify-between items-end text-[11px] text-zinc-500 font-mono">
               <span>{card.code}</span>
               <span className="opacity-60">{variantLabel} </span>
             </div>
           </div>
-  
+
           <div
             className="w-full h-6 mx-auto -mt-1 bg-gradient-to-b from-black/20 to-transparent rounded-full blur-sm opacity-0 hover:opacity-100 transition-opacity duration-300"
             style={{ transform: "scaleX(0.85) translateY(-50%)" }}

@@ -40,8 +40,6 @@ export async function GET(req: Request) {
         where.variant = "p1";
         where.rarity = { notIn: ["TR", "SP CARD"] };
       }
-
-
     
   }
 

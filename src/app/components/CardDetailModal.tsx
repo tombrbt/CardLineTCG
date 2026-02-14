@@ -32,7 +32,12 @@ function formatVariantLabel(variant: string) {
 
 }
 
-function formatRarity(rarity: string, variant: string, setCode?: string) {
+function formatRarity(
+  rarity: string,
+  variant: string,
+  setCode?: string,
+  cardCode?: string
+) {
   if (!rarity) return "";
 
   const rarityMap: Record<string, string> = {
@@ -44,23 +49,29 @@ function formatRarity(rarity: string, variant: string, setCode?: string) {
     SEC: "Secrète",
     TR: "Treasure Rare",
     "SP CARD": "Spécial",
-
-    // on laisse TR / SP CARD tels quels (ou tu peux les mapper si tu veux)
   };
 
   const translatedRarity = rarityMap[rarity] ?? rarity;
 
-  // ✅ EXCEPTION : si c’est une carte "bonus" (TR/SP CARD) en p1 -> PAS "Alternative"
-  if (variant === "p1" && (rarity === "TR" || rarity === "SP CARD")) {
+   // ✅ RÈGLE SPÉCIALE OP13-118 (uniquement dans la modal)
+   if (setCode === "OP-13" && cardCode === "OP13-080" || cardCode === "OP13-083" || cardCode === "OP13-084" || cardCode === "OP13-089" || cardCode === "OP13-091") {
+    if (variant === "p2") return "Cinq Doyens";
+    // base / p1 => comportement normal
+  }
+  // ✅ RÈGLE SPÉCIALE OP13-118 (uniquement dans la modal)
+  if (setCode === "OP-13" && cardCode === "OP13-118" || cardCode === "OP13-119" || cardCode === "OP13-120") {
+    if (variant === "p2") return "Manga";
+    if (variant === "p3") return "Red Manga";
+    if (variant === "p4") return "Spécial";
+    // base / p1 => comportement normal
+  }
+
+  // ✅ EXCEPTION : bonus TR / SP CARD en p1/p2 => pas de texte "Alternative/Manga"
+  if ((variant === "p1" || variant === "p2") && (rarity === "TR" || rarity === "SP CARD")) {
     return translatedRarity;
   }
 
-  // ✅ EXCEPTION : si c’est une carte "bonus" (TR/SP CARD) en p1 -> PAS "Alternative"
-  if (variant === "p2" && (rarity === "TR" || rarity === "SP CARD")) {
-    return translatedRarity;
-  }
-
-  // ✅ Règles variantes (valables pour toutes les séries)
+  // ✅ Règles variantes (générales)
   if (variant === "p1") return `${translatedRarity} (Alternative)`;
   if (variant === "p2") return "Manga";
   if (variant === "p3") return "Spécial";
@@ -284,8 +295,7 @@ export default function CardDetailModal({ cardId, cardIds, onClose, onNavigate }
                           {!isEmpty(card.rarity) && (
                             <div>
                               <div className="text-xs uppercase text-gray-500">Rareté</div>
-                              <div>{formatRarity(card.rarity, card.variant, card.set?.code)}</div>
-                            </div>
+                              <div>{formatRarity(card.rarity, card.variant, card.set?.code, card.code)}</div>                            </div>
                           )}
       
                           {!isEmpty(card.type) && (

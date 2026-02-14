@@ -6,6 +6,7 @@ import CardDetailModal from "./CardDetailModal";
 import { useQueryClient } from "@tanstack/react-query";
 import CardTile from "./CardTile";
 import { AnimatePresence } from "framer-motion";
+import { getVariantOrder } from "@/lib/setRules";
 
 function rarityLabel(r: string) {
   const map: Record<string, string> = {
@@ -124,6 +125,7 @@ export default function CardList() {
   const cards = data?.cards ?? [];
   const totalPages = data?.totalPages ?? 1;
   const cardIds = data?.cards?.map((c: any) => c.id) ?? [];
+  
 
 
   const variantsIndex = data?.variantsIndex ?? {};
@@ -133,21 +135,16 @@ export default function CardList() {
     return new Set(variantsIndex[key] ?? [String(card.variant || "base")]);
   }
 
-  function getVLabel(code: string, variant: string, variantsSet: Set<string>) {
-    const hasP3 = variantsSet.has("p3");
-
-    if (!variant || variant === "base") return "V.1";
-    if (variant === "p1") return "V.2";
-
-    if (hasP3) {
-      if (variant === "p3") return "V.4";
-      if (variant === "p2") return "V.3";
-    } else {
-      if (variant === "p2") return "V.3";
-    }
-
-    return null;
+  function getVLabel(card: any) {
+    const variantsSet = getVariantsSet(card); // ✅ vient de variantsIndex
+    const order = getVariantOrder(card.set?.code, variantsSet, card.code);  
+    const v = card.variant && String(card.variant).length ? String(card.variant) : "base";
+    const idx = order.indexOf(v);
+    if (idx === -1) return null;
+  
+    return `V.${idx + 1}`;
   }
+  
 
   const queryClient = useQueryClient();
 
@@ -302,16 +299,17 @@ export default function CardList() {
 
 
         {cards.map((card: any) => {
+          
           const variantsSet = getVariantsSet(card);
           const isSoloNonBase = variantsSet.size === 1 && String(card.variant) !== "base";
 
-          const hideVariantLabel = card.rarity === "TR" || card.rarity === "SP CARD";
+          const hideVariantLabel = card.rarity === "TR"  || card.rarity === "SP CARD" || card.rarity === "SR SP";
 
           return (
             <CardTile
               key={card.id}
               card={card}
-              variantLabel={hideVariantLabel ? null : getVLabel(card.code, card.variant, variantsSet)}
+              variantLabel={getVLabel(card)}
               onClick={() => setSelectedCardId(card.id)}
               rarityLabel={rarityLabel}
               isSoloNonBase={isSoloNonBase}
