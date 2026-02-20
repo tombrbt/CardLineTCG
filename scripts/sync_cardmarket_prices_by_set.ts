@@ -44,7 +44,7 @@ function variantRankForSet(setCode: string, variantsPresent: Set<string>, varian
 }
 
 function extractCodeFromName(name: string): string | null {
-  const m = name.match(/\(((?:OP|ST|EB)\d{2}-\d{3})\)/i);
+  const m = name.match(/\(((?:OP|ST|EB|PRB)\d{2}-\d{3})\)/i);  
   return m ? m[1].toUpperCase() : null;
 }
 

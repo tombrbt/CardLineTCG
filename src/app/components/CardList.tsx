@@ -8,6 +8,7 @@ import CardTile from "./CardTile";
 import { AnimatePresence } from "framer-motion";
 import { getVariantOrder } from "@/lib/setRules";
 
+
 function rarityLabel(r: string) {
   const map: Record<string, string> = {
     C: "C",
@@ -42,8 +43,6 @@ export default function CardList() {
   const [selectedCardId, setSelectedCardId] = useState<number | null>(null);
   const [setCode, setSetCode] = useState(""); // ex: "OP-09"
   const [family, setFamily] = useState("");
-
-
 
   const resetFilters = () => {
     setSearchInput("");
@@ -125,7 +124,7 @@ export default function CardList() {
   const cards = data?.cards ?? [];
   const totalPages = data?.totalPages ?? 1;
   const cardIds = data?.cards?.map((c: any) => c.id) ?? [];
-  
+
 
 
   const variantsIndex = data?.variantsIndex ?? {};
@@ -137,14 +136,41 @@ export default function CardList() {
 
   function getVLabel(card: any) {
     const variantsSet = getVariantsSet(card); // ✅ vient de variantsIndex
-    const order = getVariantOrder(card.set?.code, variantsSet, card.code);  
+    const order = getVariantOrder(card.set?.code, variantsSet, card.code);
     const v = card.variant && String(card.variant).length ? String(card.variant) : "base";
     const idx = order.indexOf(v);
     if (idx === -1) return null;
-  
+
     return `V.${idx + 1}`;
   }
-  
+
+  type RaritiesResponse = {
+    success: boolean;
+    rarities: { value: string; label: string }[];
+  };
+
+  const { data: raritiesData } = useQuery<RaritiesResponse>({
+    queryKey: ["rarities", setCode],
+    staleTime: 1000 * 60 * 60, // 1h
+    queryFn: async () => {
+      const url = setCode
+        ? `/api/meta/rarities?set=${encodeURIComponent(setCode)}`
+        : `/api/meta/rarities`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error("Erreur API rarities");
+      return res.json();
+    },
+  });
+
+  useEffect(() => {
+    const list = raritiesData?.rarities ?? [];
+    if (!rarity) return;
+    const ok = list.some((x) => x.value === rarity);
+    if (!ok) {
+      setRarity("");
+      setPage(1);
+    }
+  }, [raritiesData, rarity]);
 
   const queryClient = useQueryClient();
 
@@ -237,7 +263,7 @@ export default function CardList() {
           <option value="LIEU">Lieu</option>
         </select>
 
-        <select value={rarity} onChange={(e) => { setRarity(e.target.value); setPage(1); }} className="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border shadow-xs dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 w-full justify-between bg-zinc-800 border-zinc-700 text-zinc-100 hover:bg-zinc-700 hover:text-zinc-50">
+        {/* <select value={rarity} onChange={(e) => { setRarity(e.target.value); setPage(1); }} className="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border shadow-xs dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 w-full justify-between bg-zinc-800 border-zinc-700 text-zinc-100 hover:bg-zinc-700 hover:text-zinc-50">
           <option value="">Rareté</option>
           <option value="C">Commune</option>
           <option value="UC">Peu Commune</option>
@@ -248,6 +274,20 @@ export default function CardList() {
           <option value="SP CARD">Spécial</option>
           <option value="TR">Treasure Rare</option>
           <option value="MANGA">Manga</option>
+        </select> */}
+
+        <select
+          value={rarity}
+          onChange={(e) => { setRarity(e.target.value); setPage(1); }}
+          className="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border shadow-xs dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 w-full justify-between bg-zinc-800 border-zinc-700 text-zinc-100 hover:bg-zinc-700 hover:text-zinc-50"
+        >
+          <option value="">Rareté</option>
+
+          {(raritiesData?.rarities ?? []).map((opt) => (
+            <option key={opt.value} value={opt.value}>
+              {opt.label}
+            </option>
+          ))}
         </select>
 
 
@@ -299,11 +339,11 @@ export default function CardList() {
 
 
         {cards.map((card: any) => {
-          
+
           const variantsSet = getVariantsSet(card);
           const isSoloNonBase = variantsSet.size === 1 && String(card.variant) !== "base";
 
-          const hideVariantLabel = card.rarity === "TR"  || card.rarity === "SP CARD" || card.rarity === "SR SP";
+          const hideVariantLabel = card.rarity === "TR" || card.rarity === "SP CARD" || card.rarity === "SR SP";
 
           return (
             <CardTile
@@ -342,15 +382,15 @@ export default function CardList() {
 
       </div>
       <AnimatePresence>
-  {selectedCardId != null && (
-    <CardDetailModal
-      cardId={selectedCardId}
-      cardIds={cardIds}
-      onClose={() => setSelectedCardId(null)}
-      onNavigate={(id) => setSelectedCardId(id)}
-    />
-  )}
-</AnimatePresence>
+        {selectedCardId != null && (
+          <CardDetailModal
+            cardId={selectedCardId}
+            cardIds={cardIds}
+            onClose={() => setSelectedCardId(null)}
+            onNavigate={(id) => setSelectedCardId(id)}
+          />
+        )}
+      </AnimatePresence>
     </div>
 
   );

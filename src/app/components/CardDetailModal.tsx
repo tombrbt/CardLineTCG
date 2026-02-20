@@ -49,6 +49,7 @@ function formatRarity(
     SEC: "Secrète",
     TR: "Treasure Rare",
     "SP CARD": "Spécial",
+    P: "Promos"
   };
 
   const translatedRarity = rarityMap[rarity] ?? rarity;

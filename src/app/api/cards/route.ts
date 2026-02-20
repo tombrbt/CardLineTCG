@@ -26,11 +26,42 @@ export async function GET(req: Request) {
   if (color) where.color = color;
   if (type) where.type = type;
   if (rarity) {
+
+    if (rarity === "FIVE_ELDERS") {
+      where.code = { in: ["OP13-080","OP13-083","OP13-084","OP13-089","OP13-091"] };
+      where.variant = "p2";
+      // (tu peux ajouter rarity notIn TR/SP si tu veux, mais normalement ces cartes ne sont pas TR/SP)
+    }
     // Cas spécial OP-09 : Manga
     if (rarity === "MANGA") {
-      where.variant = "p2";
-      where.rarity = { notIn: ["TR", "SP CARD"] };
-
+      // OP-13: exclusions + inclure Red Manga
+      const eldersCodes = ["OP13-080", "OP13-083", "OP13-084", "OP13-089", "OP13-091"];
+      const redMangaCodes = ["OP13-118", "OP13-119", "OP13-120"];
+  
+      where.AND = where.AND ?? [];
+  
+      // 1) Exclure les "Cinq Doyens" du filtre Manga
+      // (ils sont p2 donc sinon ils remontent)
+      where.AND.push({
+        NOT: [
+          { code: { in: eldersCodes } },
+        ],
+      });
+  
+      // 2) Manga = p2 (hors TR/SP CARD)
+      // 3) Red Manga = p3 MAIS uniquement pour 118/119/120
+      where.AND.push({
+        OR: [
+          {
+            variant: "p2",
+            rarity: { notIn: ["TR", "SP CARD"] },
+          },
+          {
+            code: { in: redMangaCodes },
+            variant: "p3",
+          },
+        ],
+      });
     } else {
       // Raretés normales
       where.rarity = rarity;

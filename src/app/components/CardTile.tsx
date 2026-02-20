@@ -5,6 +5,7 @@ import { LilCometCardBright } from "@/components/ui/lil-comet-card-bright";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import Image from "next/image";
 
+
 function badgeTooltipText(badgeText: string) {
   const map: Record<string, string> = {
     C: "Commune",
@@ -17,6 +18,8 @@ function badgeTooltipText(badgeText: string) {
     SP: "Spécial",
     Alt: "Alternative",
     Doyens: "Cinq Doyens",
+    P: "Promos",
+
     "SP CARD": "Spécial",
 
   };

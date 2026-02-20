@@ -28,8 +28,8 @@ async function main() {
     update: {},
     create: {
       code: setCode,
-      name_fr: setCode === "OP-13" ? "Successeurs" : setCode,
-      name_en: setCode === "OP-13" ? "Carrying On His Will" : setCode,
+      name_fr: setCode === "EB-03" ? "Heroines Edition" : setCode,
+      name_en: setCode === "EB-03" ? "Heroines Edition" : setCode,
       releaseDate: new Date("2024-12-01"),
       type: "booster",
     },

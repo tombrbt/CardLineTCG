@@ -750,7 +750,7 @@
   {
     "set": "",
     "code": "OP02-018",
-    "variant": "r1",
+    "variant": "p1",
     "name": "Marco",
     "rarity": "R",
     "type": "PERSONNAGE",
@@ -937,7 +937,7 @@
   {
     "set": "",
     "code": "OP02-106",
-    "variant": "r1",
+    "variant": "p1",
     "name": "Tsuru",
     "rarity": "UC",
     "type": "PERSONNAGE",
@@ -1022,7 +1022,7 @@
   {
     "set": "",
     "code": "OP02-117",
-    "variant": "r1",
+    "variant": "p1",
     "name": "Ice Age",
     "rarity": "UC",
     "type": "ÉVÉNEMENTS",
@@ -1124,7 +1124,7 @@
   {
     "set": "",
     "code": "OP03-003",
-    "variant": "r1",
+    "variant": "p1",
     "name": "Izo",
     "rarity": "R",
     "type": "PERSONNAGE",
@@ -1413,7 +1413,7 @@
   {
     "set": "",
     "code": "OP03-079",
-    "variant": "r1",
+    "variant": "p1",
     "name": "Vergo",
     "rarity": "UC",
     "type": "PERSONNAGE",
@@ -1481,7 +1481,7 @@
   {
     "set": "",
     "code": "OP03-089",
-    "variant": "r1",
+    "variant": "p1",
     "name": "Brandnew",
     "rarity": "R",
     "type": "PERSONNAGE",
