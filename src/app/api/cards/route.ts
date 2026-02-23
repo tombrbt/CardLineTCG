@@ -27,45 +27,41 @@ export async function GET(req: Request) {
   if (type) where.type = type;
   if (rarity) {
 
-    if (rarity === "FIVE_ELDERS") {
-      where.code = { in: ["OP13-080","OP13-083","OP13-084","OP13-089","OP13-091"] };
-      where.variant = "p2";
-      // (tu peux ajouter rarity notIn TR/SP si tu veux, mais normalement ces cartes ne sont pas TR/SP)
-    }
-    // Cas spécial OP-09 : Manga
-    if (rarity === "MANGA") {
-      // OP-13: exclusions + inclure Red Manga
-      const eldersCodes = ["OP13-080", "OP13-083", "OP13-084", "OP13-089", "OP13-091"];
-      const redMangaCodes = ["OP13-118", "OP13-119", "OP13-120"];
-  
-      where.AND = where.AND ?? [];
-  
-      // 1) Exclure les "Cinq Doyens" du filtre Manga
-      // (ils sont p2 donc sinon ils remontent)
-      where.AND.push({
-        NOT: [
-          { code: { in: eldersCodes } },
-        ],
-      });
-  
-      // 2) Manga = p2 (hors TR/SP CARD)
-      // 3) Red Manga = p3 MAIS uniquement pour 118/119/120
-      where.AND.push({
+// ---- Rarity filters (DB + UI) ----
+const ELDERS_CODES = ["OP13-080", "OP13-083", "OP13-084", "OP13-089", "OP13-091"];
+const RED_MANGA_CODES = ["OP13-118", "OP13-119", "OP13-120"];
+
+if (rarity) {
+  if (rarity === "MANGA") {
+    // Manga = p2 (hors TR/SP + hors Cinq Doyens) OU Red Manga (OP13 p3 sur codes précis)
+    where.AND = [
+      ...(where.AND ?? []),
+      {
         OR: [
           {
             variant: "p2",
             rarity: { notIn: ["TR", "SP CARD"] },
+            code: { notIn: ELDERS_CODES },
           },
           {
-            code: { in: redMangaCodes },
             variant: "p3",
+            code: { in: RED_MANGA_CODES },
           },
         ],
-      });
-    } else {
-      // Raretés normales
-      where.rarity = rarity;
-    }
+      },
+    ];
+  } else if (rarity === "ALTERNATIVE") {
+    where.variant = "p1";
+    where.rarity = { notIn: ["TR", "SP CARD"] };
+  } else if (rarity === "FIVE_ELDERS") {
+    // Cinq Doyens = uniquement ces codes + p2
+    where.code = { in: ELDERS_CODES };
+    where.variant = "p2";
+  } else {
+    // Raretés normales (DB)
+    where.rarity = rarity;
+  }
+}
     // Cas spécial : Alternative (si tu l'utilises)
       if (rarity === "ALTERNATIVE") {
         where.variant = "p1";
