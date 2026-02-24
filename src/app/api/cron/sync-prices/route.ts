@@ -1,10 +1,24 @@
 import { NextResponse } from "next/server";
 import { syncAllSetsPrices, disconnectPrisma } from "@/../scripts/sync_cardmarket_prices_core";
 
+// export async function GET(req: Request) {
+//   try {
+//     // 🔐 Vérification sécurité Vercel Cron
+//     const authHeader = req.headers.get("authorization");
+
+//     if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+//       return NextResponse.json(
+//         { success: false, error: "Unauthorized" },
+//         { status: 401 }
+//       );
+//     }
+
 export async function GET(req: Request) {
   try {
-    // 🔐 Vérification sécurité Vercel Cron
+    console.log("CRON_SECRET env:", process.env.CRON_SECRET);
+
     const authHeader = req.headers.get("authorization");
+    console.log("Auth header:", authHeader);
 
     if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
       return NextResponse.json(
@@ -12,7 +26,6 @@ export async function GET(req: Request) {
         { status: 401 }
       );
     }
-
     console.log("⏰ CRON: Starting daily price sync...");
 
     const result = await syncAllSetsPrices({
