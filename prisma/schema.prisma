@@ -14,6 +14,8 @@ model Set {
   name_en     String
   releaseDate DateTime
   type        String
+  cardmarketExpansionId Int?  // ex: 5755, 5974, 6187, ...
+
   cards       Card[]
 }
 
