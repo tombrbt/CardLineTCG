@@ -1,0 +1,8 @@
+{
+    "cron": [
+      {
+        "path": "/api/cron/sync-prices?secret=CRON_SECRET",
+        "schedule": "0 16 * * *"
+      }
+    ]
+  }
