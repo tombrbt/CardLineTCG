@@ -1,7 +1,7 @@
 {
     "cron": [
       {
-        "path": "/api/cron/sync-prices?secret=CRON_SECRET",
+        "path": "/api/cron/sync-prices?secret=un_truc_long_et_random_123456",
         "schedule": "0 16 * * *"
       }
     ]
