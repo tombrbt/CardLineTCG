@@ -3,18 +3,17 @@ import { syncAllSetsPrices, disconnectPrisma } from "@/../scripts/sync_cardmarke
 
 export async function GET(req: Request) {
   try {
-    const url = new URL(req.url);
-    const secret = url.searchParams.get("secret");
+    // 🔐 Vérification sécurité Vercel Cron
+    const authHeader = req.headers.get("authorization");
 
-    // 🔐 Sécurité : vérifier le secret
-    if (secret !== process.env.CRON_SECRET) {
+    if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
       return NextResponse.json(
         { success: false, error: "Unauthorized" },
         { status: 401 }
       );
     }
 
-    console.log("⏰ CRON: Starting price sync...");
+    console.log("⏰ CRON: Starting daily price sync...");
 
     const result = await syncAllSetsPrices({
       dryRun: false,
@@ -23,7 +22,7 @@ export async function GET(req: Request) {
 
     await disconnectPrisma();
 
-    console.log("✅ CRON: Sync finished", result);
+    console.log("✅ CRON: Finished", result);
 
     return NextResponse.json({
       success: true,
